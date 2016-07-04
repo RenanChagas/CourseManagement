@@ -43,6 +43,10 @@ public class User {
 	@NotEmpty
 	@Column(name="EMAIL", nullable=false)
 	private String email;
+	
+	@NotEmpty
+	@Column(name="JOB_DESC", nullable=false)
+	private String jobDesc;
 
 	@NotEmpty
 	@Column(name="STATE", nullable=false)
@@ -101,6 +105,14 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
+	public String getJobDesc() {
+		return jobDesc;
+	}
+
+	public void setJobDesc(String jobDesc) {
+		this.jobDesc = jobDesc;
+	}
 
 	public String getState() {
 		return state;
@@ -122,7 +134,7 @@ public class User {
 	public String toString() {
 		return "User [id=" + id + ", ssoId=" + ssoId + ", password=" + password
 				+ ", firstName=" + firstName + ", lastName=" + lastName
-				+ ", email=" + email + ", state=" + state + ", userProfiles=" + userProfiles +"]";
+				+ ", email=" + email + ", jobDesc=" + jobDesc + ", state=" + state + ", userProfiles=" + userProfiles +"]";
 	}
 
 	

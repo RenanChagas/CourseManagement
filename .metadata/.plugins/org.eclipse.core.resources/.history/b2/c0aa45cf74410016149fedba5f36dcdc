@@ -1,0 +1,21 @@
+package com.course.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.course.dao.UserDao;
+import com.course.model.User;
+
+public interface UserService{
+
+	
+	
+	public void save(User user);
+	
+	public User findById(int id);
+	
+	public User findBySsoId(String sso);
+	
+}
