@@ -8,8 +8,8 @@ import com.course.model.User;
 
 @Repository("UserDao")
 public interface UserDao extends JpaRepository<User, Long> {
-
-	public User findBySsoId(String sso);
+	
+	public User findByUsername(String username);
 	
 	public User findById(int id);
 
