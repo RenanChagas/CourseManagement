@@ -5,90 +5,7 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2016-07-04T15:40:26Z</updated>
-  <entry>
-    <title>Spring Boot 1.3.6 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2016/07/04/spring-boot-1-3-6-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Stéphane Nicoll</name>
-    </author>
-    <id>tag:spring.io,2016-07-04:2543</id>
-    <updated>2016-07-04T15:40:26Z</updated>
-    <content type="html">&lt;p&gt;Right after &lt;a href="https://spring.io/blog/2016/07/04/spring-framework-4-3-1-and-4-2-7-available-now"&gt;Spring Framework 4.2.7&lt;/a&gt;, Spring Boot 1.3.6 has been released and is available now from &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.springframework.boot%22"&gt;Maven Central&lt;/a&gt;. &lt;/p&gt;
-&lt;p&gt;This maintenance release includes a &lt;a href="https://github.com/spring-projects/spring-boot/issues?q=milestone%3A1.3.6+is%3Aclosed"&gt;number of fixes&lt;/a&gt; and 3rd party dependency updates.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Framework 4.3.1 and 4.2.7 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2016/07/04/spring-framework-4-3-1-and-4-2-7-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Stéphane Nicoll</name>
-    </author>
-    <id>tag:spring.io,2016-07-04:2542</id>
-    <updated>2016-07-04T11:16:16Z</updated>
-    <content type="html">&lt;p&gt;It is my pleasure to announce that the Spring Framework &lt;a href="https://jira.spring.io/secure/ReleaseNote.jspa?projectId=10000&amp;version=15568"&gt;4.3.1&lt;/a&gt; and &lt;a href="https://jira.spring.io/secure/ReleaseNote.jspa?projectId=10000&amp;version=15567"&gt;4.2.7&lt;/a&gt; maintenance releases &lt;a href="http://projects.spring.io/spring-framework"&gt;are available now&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The first maintenance release of the 4.3 line contains 40 fixes and improvements and is the base for the upcoming Spring Boot 1.4 release. The master branch has now switched to 5.0 and we&amp;rsquo;ll start merging 5.0 features in preparation for &lt;code&gt;5.0.0.M1&lt;/code&gt; later this month.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://jira.spring.io/browse/SPR"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/htmlsingle/"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;For more details about Spring Framework 4.3, check &lt;a href="https://2016.event.springoneplatform.io/schedule/sessions/modern_java_component_design_with_spring_framework_4_3.html"&gt;Juergen Hoeller&amp;rsquo;s session&lt;/a&gt; at &lt;a href="http://springoneplatform.io"&gt;SpringOne Platform&lt;/a&gt;, which is taking place in Las Vegas between August 1-4 this year. There are many other great talks so &lt;a href="https://2016.event.springoneplatform.io/schedule/sessions"&gt;check the agenda&lt;/a&gt; and &lt;a href="https://2016.event.springoneplatform.io/register"&gt;get your ticket&lt;/a&gt; if you haven’t done so already.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring for Apache Kafka 1.0 and Spring Integration Kafka 2.0 go GA</title>
-    <link rel="alternate" href="https://spring.io/blog/2016/07/04/spring-for-apache-kafka-1-0-and-spring-integration-kafka-2-0-go-ga" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Artem Bilan</name>
-    </author>
-    <id>tag:spring.io,2016-07-01:2540</id>
-    <updated>2016-07-04T05:00:00Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;I&amp;#8217;m pleased to announce that the &lt;code&gt;spring-kafka&lt;/code&gt; (Spring for Apache Kafka) &lt;code&gt;1.0 GA&lt;/code&gt; and  Spring Integration Kafka &lt;code&gt;2.0 GA&lt;/code&gt; are available finally!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The artifacts &lt;code&gt;org.springframework.kafka:spring-kafka:1.0.0.RELEASE&lt;/code&gt; and &lt;code&gt;org.springframework.kafka:spring-kafka-test:1.0.0.RELEASE&lt;/code&gt; are available in the &lt;a href="https://repo.spring.io/release/"&gt;Release&lt;/a&gt; repository and Maven Central, respectively.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;In addition &lt;code&gt;org.springframework.integration:spring-integration-kafka:2.0.0.RELEASE&lt;/code&gt;, fully based on the &lt;code&gt;spring-kafka-1.0.0.RELEASE&lt;/code&gt;, is available at the same repositories as well.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Of course, many thanks to everyone involved, to active community members, who provided feature requests and contributions.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;There have been some reworks and bug fixes since the &lt;a href="https://spring.io/blog/2016/06/07/spring-for-apache-kafka-1-0-release-candidate-1-available"&gt;Release Candidate 1&lt;/a&gt; including:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;rework for Manual AckMode, which indicate as a breaking change though, because the &lt;code&gt;MANUAL_IMMEDIATE_SYNC&lt;/code&gt; mode has been removed;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;the &lt;code&gt;ackTime&lt;/code&gt; has now 5 seconds as default value. The same as Kafka default &lt;code&gt;auto.commit.interval.ms&lt;/code&gt;;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;the &lt;code&gt;ackCount&lt;/code&gt; must be &lt;code&gt;&amp;gt; 0&lt;/code&gt; in case of &lt;code&gt;COUNT&lt;/code&gt; and &lt;code&gt;COUNT_TIME&lt;/code&gt; mode;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;a new Spring Integration Kafka support chapter in the Reference Manual.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;See also the &lt;a href="http://docs.spring.io/spring-kafka/docs/1.0.0.RELEASE/reference/htmlsingle/"&gt;Reference Manual&lt;/a&gt; for more information.&lt;/p&gt;
-&lt;/div&gt;
-&lt;h1 id="next-steps" class="sect0"&gt;&lt;a class="anchor" href="#next-steps"&gt;&lt;/a&gt;Next Steps&lt;/h1&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;We expect to release the Milestone 1 for version 1.1 enough soon, which will support Kafka 0.10, include some Spring Boot auto configuration and actuator endpoint and much more!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-kafka/"&gt;Project Page&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-kafka/docs/1.0.0.RELEASE/reference/htmlsingle/"&gt;Documentation&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-kafka/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-integration"&gt;Help&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;h1 id="spring-one-platform" class="sect0"&gt;&lt;a class="anchor" href="#spring-one-platform"&gt;&lt;/a&gt;Spring One Platform&lt;/h1&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://spring.io/team/grussell"&gt;Gary Russell&lt;/a&gt; will be talking about &lt;a href="https://2016.event.springoneplatform.io/schedule/sessions/spring_for_apache_kafka.html"&gt;Spring for Apache Kafka&lt;/a&gt; at &lt;a href="http://springoneplatform.io"&gt;Spring One Platform&lt;/a&gt;, which is taking place in Las Vegas between August 1-4 this year.
-There are many other great talks so &lt;a href="https://2016.event.springoneplatform.io/schedule/sessions"&gt;check the agenda&lt;/a&gt; and &lt;a href="https://2016.event.springoneplatform.io/register"&gt;get your ticket&lt;/a&gt; if you haven’t done so already.&lt;/p&gt;
-&lt;/div&gt;</content>
-  </entry>
+  <updated>2016-07-01T15:19:00Z</updated>
   <entry>
     <title>Spring Cloud Brixton.SR2 is available</title>
     <link rel="alternate" href="https://spring.io/blog/2016/07/01/spring-cloud-brixton-sr2-is-available" />
@@ -794,5 +711,499 @@ Don&amp;#8217;t miss &lt;a href="https://springoneplatform.io/"&gt;SpringOne Pla
 &lt;div class="paragraph"&gt;
 &lt;p&gt;&lt;a href="http://projects.spring.io/spring-integration/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://jira.spring.io/browse/INT"&gt;JIRA&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-integration/blob/master/CONTRIBUTING.md"&gt;Contributions&lt;/a&gt; | &lt;a href="http://stackoverflow.com"&gt;StackOverflow&lt;/a&gt; (&lt;code&gt;spring-integration&lt;/code&gt; tag)&lt;/p&gt;
 &lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <title>Notes on Reactive Programming Part II: Writing Some Code</title>
+    <link rel="alternate" href="https://spring.io/blog/2016/06/13/notes-on-reactive-programming-part-ii-writing-some-code" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Dave Syer</name>
+    </author>
+    <id>tag:spring.io,2016-05-25:2510</id>
+    <updated>2016-06-13T14:57:00Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;In this article we continue the series on &lt;a href="https://spring.io/blog/2016/06/07/notes-on-reactive-programming-part-i-the-reactive-landscape"&gt;Reactive Programming&lt;/a&gt;, and we concentrate on explaining some concepts through actual code samples. The end result should be that you understand a bit better what makes Reactive different, and what makes it functional. The examples here are quite abstract, but they give you a way to think about the APIs and the programming style, and start to get a feel for how it is different. We will see the elements of Reactive, and learn how to control the flow of data, and process in background threads if necessary.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="setting-up-a-project"&gt;&lt;a class="anchor" href="#setting-up-a-project"&gt;&lt;/a&gt;Setting Up a Project&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;We will use the Reactor libraries and a bit of Spring 5.0 to illustrate the points we need to make. The code could just as easily be written with other tools. If you want to play with the code and see it working without having to copy-paste anything, there are working samples with tests in &lt;a href="https://github.com/dsyer/reactive-notes"&gt;Github&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;To get started grab a blank project from &lt;a href="https://start.spring.io" class="bare"&gt;https://start.spring.io&lt;/a&gt; and add the Reactor Core dependency. With Maven&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-xml" data-lang="xml"&gt;		&amp;lt;dependency&amp;gt;
+			&amp;lt;groupId&amp;gt;io.projectreactor&amp;lt;/groupId&amp;gt;
+			&amp;lt;artifactId&amp;gt;reactor-core&amp;lt;/artifactId&amp;gt;
+			&amp;lt;version&amp;gt;2.5.0.M4&amp;lt;/version&amp;gt;
+		&amp;lt;/dependency&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;With Gradle it&amp;#8217;s very similar:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;    compile 'io.projectreactor:reactor-core:2.5.0.M4'&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Now let&amp;#8217;s write some code.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="what-makes-it-functional"&gt;&lt;a class="anchor" href="#what-makes-it-functional"&gt;&lt;/a&gt;What Makes it Functional?&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The basic building block of Reactive is a sequence of events, and two protagonists, a publisher and a subscriber to those events. It&amp;#8217;s also OK to call a sequence a "stream" because that&amp;#8217;s what it is. If we need to, we will use the word "stream" with a small "s", but Java 8 has a &lt;code&gt;java.util.Stream&lt;/code&gt; which is different, so try not to get confused. We will try to concentrate the narrative on the publisher and subscriber anyway (that&amp;#8217;s what Reactive Streams does).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Reactor is the library we are going to use in samples, so we&amp;#8217;ll stick to the notation there, and call the publisher a &lt;code&gt;Flux&lt;/code&gt; (it implements the interface &lt;code&gt;Publisher&lt;/code&gt; from Reactive Streams). The RxJava library is very similar and has a lot of parallel features, so in that case we would be talking about an &lt;code&gt;Observable&lt;/code&gt; instead, but the code would be very similar. (Reactor 2.0 called it a &lt;code&gt;Stream&lt;/code&gt; which is confusing if we need to talk about Java 8 &lt;code&gt;Streams&lt;/code&gt; as well, so we&amp;#8217;ll only use the new code in Reactor 2.5.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sect2"&gt;
+&lt;h3 id="generators"&gt;&lt;a class="anchor" href="#generators"&gt;&lt;/a&gt;Generators&lt;/h3&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;A &lt;code&gt;Flux&lt;/code&gt; is a publisher of a sequence of events of a specific POJO type, so it is generic, i.e. &lt;code&gt;Flux&amp;lt;T&amp;gt;&lt;/code&gt; is a publisher of &lt;code&gt;T&lt;/code&gt;. &lt;code&gt;Flux&lt;/code&gt; has some static convenience methods to create instances of itself from a variety of sources. For example, to create a &lt;code&gt;Flux&lt;/code&gt; from an array:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;Flux&amp;lt;String&amp;gt; flux = Flux.just("red", "white", "blue");&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;We just generated a &lt;code&gt;Flux&lt;/code&gt;, and now we can do stuff with it. There are actually only three things you can do with it: operate on it (transform it, or combine it with other sequences), subscribe to it (it&amp;#8217;s a publisher), or configure it (modify the behaviour of subscribers).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect2"&gt;
+&lt;h3 id="single-valued-sequences"&gt;&lt;a class="anchor" href="#single-valued-sequences"&gt;&lt;/a&gt;Single Valued Sequences&lt;/h3&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Often you encounter a sequence that you know has only one or zero elements, for example a repository method that finds an entity by its id. Reactor has a &lt;code&gt;Mono&lt;/code&gt; type representing a single valued or empty &lt;code&gt;Flux&lt;/code&gt;. &lt;code&gt;Mono&lt;/code&gt; has a very similar API to &lt;code&gt;Flux&lt;/code&gt; but more focused because not all operators make sense for single-valued sequences. RxJava also has a bolt on (in version 1.x) called &lt;code&gt;Single&lt;/code&gt;, and also &lt;code&gt;Completable&lt;/code&gt; for an empty sequence. The empty sequence in Reactor is &lt;code&gt;Mono&amp;lt;Void&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect2"&gt;
+&lt;h3 id="operators"&gt;&lt;a class="anchor" href="#operators"&gt;&lt;/a&gt;Operators&lt;/h3&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;There are a &lt;em&gt;lot&lt;/em&gt; of methods on a &lt;code&gt;Flux&lt;/code&gt; and nearly all of them are operators. We aren&amp;#8217;t going to look at them all here because there are better places to look for that (like the Javadocs). We only need to get a flavour for what an operator is, and what it can do for you.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;For instance, to ask for the internal events inside a &lt;code&gt;Flux&lt;/code&gt; to be logged to standard out, you can call the &lt;code&gt;.log()&lt;/code&gt; method. Or you can transform it using a &lt;code&gt;map()&lt;/code&gt;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;Flux&amp;lt;String&amp;gt; flux = Flux.just("red", "white", "blue");
+
+Flux&amp;lt;String&amp;gt; upper = flux
+  .log()
+  .map(value -&amp;gt; value.toUpperCase());&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;In this code we transformed the strings in the input by converting them to upper case. So far, so trivial.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;What&amp;#8217;s interesting about this little sample&amp;#8201;&amp;#8212;&amp;#8201;mind blowing, even, if you&amp;#8217;re not used to it&amp;#8201;&amp;#8212;&amp;#8201;is that no data have been processed yet. Nothing has even been logged because literally, nothing happened (try it and you will see). Calling operators on a &lt;code&gt;Flux&lt;/code&gt; amounts to building a plan of execution for later. It is completely declarative, and it&amp;#8217;s why people call it "functional". The logic implemented in the operators is only executed when data starts to flow, and that doesn&amp;#8217;t happen until someone subscribes to the &lt;code&gt;Flux&lt;/code&gt; (or equivalently to the &lt;code&gt;Publisher&lt;/code&gt;).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The same declarative, functional approach to processing a sequence of data exists in all Reactive libraries, and also in Java 8 &lt;code&gt;Streams&lt;/code&gt;. Consider this, similar looking code, using a &lt;code&gt;Stream&lt;/code&gt; with the same contents as the &lt;code&gt;Flux&lt;/code&gt;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;Stream&amp;lt;String&amp;gt; stream = Streams.of("red", "white", "blue");
+Stream&amp;lt;String&amp;gt; upper = stream.map(value -&amp;gt; {
+    System.out.println(value);
+    return value.toUpperCase();
+});&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The observation we made about &lt;code&gt;Flux&lt;/code&gt; applies here: no data is processed, it&amp;#8217;s just a plan of execution. There are, however, some important differences between &lt;code&gt;Flux&lt;/code&gt; and &lt;code&gt;Stream&lt;/code&gt;, which make &lt;code&gt;Stream&lt;/code&gt; an inappropriate API for Reactive use cases. &lt;code&gt;Flux&lt;/code&gt; has a lot more operators, much of which is just convenience, but the real difference comes when you want to consume the data, so that&amp;#8217;s what we need to look at next.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="admonitionblock tip"&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class="icon"&gt;
+&lt;div class="title"&gt;Tip&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class="content"&gt;
+There is a useful blog by Sebastien Deleuze on &lt;a href="https://spring.io/blog/2016/04/19/understanding-reactive-types"&gt;Reactive Types&lt;/a&gt;, where he describes the differences between the various streaming and reactive APIs by looking at the types they define, and how you would use them. The differences between &lt;code&gt;Flux&lt;/code&gt; and &lt;code&gt;Stream&lt;/code&gt; are highlighted there in more detail.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect2"&gt;
+&lt;h3 id="subscribers"&gt;&lt;a class="anchor" href="#subscribers"&gt;&lt;/a&gt;Subscribers&lt;/h3&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;To make the data flow you have to subscribe to the &lt;code&gt;Flux&lt;/code&gt; using one of the &lt;code&gt;subscribe()&lt;/code&gt; methods. Only those methods make the data flow. They reach back through the chain of operators you declared on your sequence (if any) and request the publisher to start creating data. In the sample samples we have been working with, this means the underlying collection of strings is iterated. In more complicated use case it might trigger a file to be read from the filesystem, or a pull from a database or a call to an HTTP service.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Here&amp;#8217;s a call to &lt;code&gt;subscribe()&lt;/code&gt; in action:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;Flux.just("red", "white", "blue")
+  .log()
+  .map(value -&amp;gt; value.toUpperCase())
+.subscribe();&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The output is:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code&gt;09:17:59.665 [main] INFO reactor.core.publisher.FluxLog -  onSubscribe(reactor.core.publisher.FluxIterable$IterableSubscription@3ffc5af1)
+09:17:59.666 [main] INFO reactor.core.publisher.FluxLog -  request(unbounded)
+09:17:59.666 [main] INFO reactor.core.publisher.FluxLog -  onNext(red)
+09:17:59.667 [main] INFO reactor.core.publisher.FluxLog -  onNext(white)
+09:17:59.667 [main] INFO reactor.core.publisher.FluxLog -  onNext(blue)
+09:17:59.667 [main] INFO reactor.core.publisher.FluxLog -  onComplete()&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;So we can see from this that the effect of &lt;code&gt;subscribe()&lt;/code&gt; without an argument, is to request the publisher to send &lt;em&gt;all&lt;/em&gt; data&amp;#8201;&amp;#8212;&amp;#8201;there&amp;#8217;s only one &lt;code&gt;request()&lt;/code&gt; logged and it&amp;#8217;s "unbounded". We can also see callbacks for each item that is published (&lt;code&gt;onNext()&lt;/code&gt;), for the end of the sequence (&lt;code&gt;onComplete()&lt;/code&gt;), and for the original subscription (&lt;code&gt;onSubscribe()&lt;/code&gt;). If you needed to you could listen for those events yourself using the &lt;code&gt;doOn*()&lt;/code&gt; methods in &lt;code&gt;Flux&lt;/code&gt;, which are themselves operators, not subscribers, so they don&amp;#8217;t cause any data to flow on their own.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The &lt;code&gt;subscribe()&lt;/code&gt; method is overloaded, and the other variants give you different options to control what happens. One important and convenient form is &lt;code&gt;subscribe()&lt;/code&gt; with callbacks as arguments. The first argument is a &lt;code&gt;Consumer&lt;/code&gt;, which gives you a callback with each of the items, and you can also optionally add a &lt;code&gt;Consumer&lt;/code&gt; for an error if there is one, and a vanilla &lt;code&gt;Runnable&lt;/code&gt; to execute when the sequence is complete. For example, just with the per-item callback:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;Flux.just("red", "white", "blue")
+    .log()
+    .map(value -&amp;gt; value.toUpperCase())
+.subscribe(System.out::println);&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Here&amp;#8217;s the output:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code&gt;09:56:12.680 [main] INFO reactor.core.publisher.FluxLog -  onSubscribe(reactor.core.publisher.FluxArray$ArraySubscription@59f99ea)
+09:56:12.682 [main] INFO reactor.core.publisher.FluxLog -  request(unbounded)
+09:56:12.682 [main] INFO reactor.core.publisher.FluxLog -  onNext(red)
+RED
+09:56:12.682 [main] INFO reactor.core.publisher.FluxLog -  onNext(white)
+WHITE
+09:56:12.682 [main] INFO reactor.core.publisher.FluxLog -  onNext(blue)
+BLUE
+09:56:12.682 [main] INFO reactor.core.publisher.FluxLog -  onComplete()&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;We could control the flow of data, and make it "bounded", in a variety of ways. The raw API for control is the &lt;code&gt;Subscription&lt;/code&gt; you get from a &lt;code&gt;Subscriber&lt;/code&gt;. The equivalent long form of the short call to &lt;code&gt;subscribe()&lt;/code&gt; above is:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;.subscribe(new Subscriber&amp;lt;String&amp;gt;() {
+
+    @Override
+    public void onSubscribe(Subscription s) {
+        s.request(Long.MAX_VALUE);
+    }
+    @Override
+    public void onNext(String t) {
+        System.out.println(t);
+    }
+    @Override
+    public void onError(Throwable t) {
+    }
+    @Override
+    public void onComplete() {
+    }
+
+});&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;To control the flow, e.g. to consume at most 2 items at a time, you could use the &lt;code&gt;Subscription&lt;/code&gt; more intelligently:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;.subscribe(new Subscriber&amp;lt;String&amp;gt;() {
+
+    private long count = 0;
+    private Subscription subscription;
+
+    @Override
+    public void onSubscribe(Subscription subscription) {
+        this.subscription = subscription;
+        subscription.request(2);
+    }
+
+    @Override
+    public void onNext(String t) {
+        count++;
+        if (count&amp;gt;=2) {
+            count = 0;
+            subscription.request(2);
+        }
+     }
+...&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;This &lt;code&gt;Subscriber&lt;/code&gt; is "batching" items 2 at a time. It&amp;#8217;s a common use case so you might think about extracting the implementation to a convenience class, and that would make the code more readable too. The output looks like this:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code&gt;09:47:13.562 [main] INFO reactor.core.publisher.FluxLog -  onSubscribe(reactor.core.publisher.FluxArray$ArraySubscription@61832929)
+09:47:13.564 [main] INFO reactor.core.publisher.FluxLog -  request(2)
+09:47:13.564 [main] INFO reactor.core.publisher.FluxLog -  onNext(red)
+09:47:13.565 [main] INFO reactor.core.publisher.FluxLog -  onNext(white)
+09:47:13.565 [main] INFO reactor.core.publisher.FluxLog -  request(2)
+09:47:13.565 [main] INFO reactor.core.publisher.FluxLog -  onNext(blue)
+09:47:13.565 [main] INFO reactor.core.publisher.FluxLog -  onComplete()&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect2"&gt;
+&lt;h3 id="configurers"&gt;&lt;a class="anchor" href="#configurers"&gt;&lt;/a&gt;Configurers&lt;/h3&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;In fact the batching subscriber is such a common use case that there are convenience methods already available in &lt;code&gt;Flux&lt;/code&gt;. They fall into the category of "configurers", operating on the &lt;code&gt;Flux&lt;/code&gt; itself and not on the data. Generally a configurer modifies the behaviour of subscribers before they are added. The batching example above can be implemented like this:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;Flux.just("red", "white", "blue")
+  .log()
+  .map(value -&amp;gt; value.toUpperCase())
+  .useCapacity(2)
+.subscribe();&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;(note the call to &lt;code&gt;useCapacity()&lt;/code&gt; before the subscription). Here&amp;#8217;s the output:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code&gt;10:25:43.739 [main] INFO reactor.core.publisher.FluxLog -  onSubscribe(reactor.core.publisher.FluxArray$ArraySubscription@4667ae56)
+10:25:43.740 [main] INFO reactor.core.publisher.FluxLog -  request(2)
+10:25:43.740 [main] INFO reactor.core.publisher.FluxLog -  onNext(red)
+10:25:43.741 [main] INFO reactor.core.publisher.FluxLog -  onNext(white)
+10:25:43.741 [main] INFO reactor.core.publisher.FluxLog -  request(2)
+10:25:43.741 [main] INFO reactor.core.publisher.FluxLog -  onNext(blue)
+10:25:43.741 [main] INFO reactor.core.publisher.FluxLog -  onComplete()&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="admonitionblock tip"&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class="icon"&gt;
+&lt;div class="title"&gt;Tip&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class="content"&gt;
+A library that will process sequences for you, like Spring Reactive Web, can handle the configuration concerns, as well as the subscriptions. It&amp;#8217;s good to be able to push these concerns down the stack because it saves you from cluttering your code with non-business logic, making it more readable and easier to test and maintain. So as a rule, it is a good thing if you can &lt;strong&gt;avoid calling configurers&lt;/strong&gt;, or at least push that code into a processing layer, and out of the business logic.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect2"&gt;
+&lt;h3 id="threads-schedulers-and-background-processing"&gt;&lt;a class="anchor" href="#threads-schedulers-and-background-processing"&gt;&lt;/a&gt;Threads, Schedulers and Background Processing&lt;/h3&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;An interesting feature of all the logs above is that they are all on the "main" thread, which is the thread of the caller to &lt;code&gt;subscribe()&lt;/code&gt;. This highlights an important point: Reactor is extremely frugal with threads, because that gives you the greatest chance of the best possible performance. That might be a surprising statement if you&amp;#8217;ve been wrangling threads and thread pools and asynchronous executions for the last 5 years, trying to squeeze more juice out of your services. But it&amp;#8217;s true: in the absence of any imperative to switch threads, even if the JVM is optimized to handle threads very efficiently, it is always faster to do computation on a single thread. Reactor has handed you the keys to control all the asynchronous processing, and it assumes you know what you are doing.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;code&gt;Flux&lt;/code&gt; provides a few configurer methods that control the thread boundaries inside the eventual subscriber. For example, you can configure the subscriptions to be handled in a background thread using &lt;code&gt;Flux.subscribeOn()&lt;/code&gt;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;Flux.just("red", "white", "blue")
+  .log()
+  .map(String::toUpperCase)
+  .subscribeOn(Schedulers.parallel())
+.useCapacity(2)
+.subscribe();&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;the result can be seen in the output:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code&gt;13:43:41.279 [parallel-1-1] INFO reactor.core.publisher.FluxLog -  onSubscribe(reactor.core.publisher.FluxArray$ArraySubscription@58663fc3)
+13:43:41.280 [parallel-1-1] INFO reactor.core.publisher.FluxLog -  request(2)
+13:43:41.281 [parallel-1-1] INFO reactor.core.publisher.FluxLog -  onNext(red)
+13:43:41.281 [parallel-1-1] INFO reactor.core.publisher.FluxLog -  onNext(white)
+13:43:41.281 [parallel-1-1] INFO reactor.core.publisher.FluxLog -  request(2)
+13:43:41.281 [parallel-1-1] INFO reactor.core.publisher.FluxLog -  onNext(blue)
+13:43:41.281 [parallel-1-1] INFO reactor.core.publisher.FluxLog -  onComplete()&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="admonitionblock tip"&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class="icon"&gt;
+&lt;div class="title"&gt;Tip&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class="content"&gt;
+if you write this code yourself, or copy-paste it, remember to wait for the processing to stop before the JVM exits.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Note that the subscription, and all the processing, takes place on a single background thread "parallel-1-1"&amp;#8201;&amp;#8212;&amp;#8201;this is because we asked for the subscriber to our main &lt;code&gt;Flux&lt;/code&gt; to be in the background. This is fine if the item processing is CPU intensive (but pointless being in a background thread, in point of fact, since you pay for the context switch but don&amp;#8217;t get the results any faster). You might also want to be able to perform item processing that is I/O intensive and possibly blocking. In this case, you would want to get it done as quickly as possible without blocking the caller. A thread pool is still your friend, and that&amp;#8217;s what you get from &lt;code&gt;Schedulers.parallel()&lt;/code&gt;. To switch the processing of the individual items to separate threads (up to the limit of the pool) we need to break them out into separate publishers, and for each of those publishers ask for the result in a background thread. One way to do this is with an operator called &lt;code&gt;flatMap()&lt;/code&gt;, which maps the items to a &lt;code&gt;Publisher&lt;/code&gt; (potentially of a different type), and then back to a sequence of the new type:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;Flux.just("red", "white", "blue")
+  .log()
+  .flatMap(value -&amp;gt;
+     Mono.just(value.toUpperCase())
+       .subscribeOn(Schedulers.parallel()),
+     2)
+.subscribe(value -&amp;gt; {
+  log.info("Consumed: " + value);
+})&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Note here the use of &lt;code&gt;flatMap()&lt;/code&gt; to push the items down into a "child" publisher, where we can control the subscription per item instead of for the whole sequence. Reactor has built in default behaviour to hang onto a single thread as long as possible, so we need to be explicit if we want it to process specific items or groups of items in a background thread. Actually, this is one of a handful of recognized tricks for forcing parallel processing (see the &lt;a href="https://github.com/reactor/reactive-streams-commons/issues/21"&gt;Reactive Gems&lt;/a&gt; issue for more detail).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The output looks like this:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code&gt;15:24:36.596 [main] INFO reactor.core.publisher.FluxLog -  onSubscribe(reactor.core.publisher.FluxIterable$IterableSubscription@6f1fba17)
+15:24:36.610 [main] INFO reactor.core.publisher.FluxLog -  request(2)
+15:24:36.610 [main] INFO reactor.core.publisher.FluxLog -  onNext(red)
+15:24:36.613 [main] INFO reactor.core.publisher.FluxLog -  onNext(white)
+15:24:36.613 [parallel-1-1] INFO com.example.FluxFeaturesTests - Consumed: RED
+15:24:36.613 [parallel-1-1] INFO reactor.core.publisher.FluxLog -  request(1)
+15:24:36.613 [parallel-1-1] INFO reactor.core.publisher.FluxLog -  onNext(blue)
+15:24:36.613 [parallel-1-1] INFO reactor.core.publisher.FluxLog -  onComplete()
+15:24:36.614 [parallel-3-1] INFO com.example.FluxFeaturesTests - Consumed: BLUE
+15:24:36.617 [parallel-2-1] INFO com.example.FluxFeaturesTests - Consumed: WHITE&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Notice that there are now multiple threads consuming the items, and the concurrency hint in the &lt;code&gt;flatMap()&lt;/code&gt; ensures that there are 2 items being processed at any given time, as long as they are available. We see &lt;code&gt;request(1)&lt;/code&gt; a lot because the system is trying to keep 2 items in the pipeline, and generally they don&amp;#8217;t finish processing at the same time. Reactor tries to be very smart here in fact, and it pre-fetches items from the upstream &lt;code&gt;Publisher&lt;/code&gt; to try to eliminate waiting time for the subscriber (we aren&amp;#8217;t seeing that here because the numbers are low&amp;#8201;&amp;#8212;&amp;#8201;we are only processing 3 items).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="admonitionblock tip"&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class="icon"&gt;
+&lt;div class="title"&gt;Tip&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class="content"&gt;
+Three items ("red", "white", "blue") might be too few to convincingly see more than one background thread, so it might be better to generate more data. You could do that with a random number generator, for instance.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;code&gt;Flux&lt;/code&gt; also has a &lt;code&gt;publishOn()&lt;/code&gt; method which is the same, but for the listeners (i.e. &lt;code&gt;onNext()&lt;/code&gt; or consumer callbacks) instead of for the subscriber itself:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;Flux.just("red", "white", "blue")
+  .log()
+  .map(String::toUpperCase)
+  .subscribeOn(Schedulers.newParallel("sub"))
+  .publishOn(Schedulers.newParallel("pub"), 2)
+.subscribe(value -&amp;gt; {
+    log.info("Consumed: " + value);
+});&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The output looks like this:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code&gt;15:12:09.750 [sub-1-1] INFO reactor.core.publisher.FluxLog -  onSubscribe(reactor.core.publisher.FluxIterable$IterableSubscription@172ed57)
+15:12:09.758 [sub-1-1] INFO reactor.core.publisher.FluxLog -  request(2)
+15:12:09.759 [sub-1-1] INFO reactor.core.publisher.FluxLog -  onNext(red)
+15:12:09.759 [sub-1-1] INFO reactor.core.publisher.FluxLog -  onNext(white)
+15:12:09.770 [pub-1-1] INFO com.example.FluxFeaturesTests - Consumed: RED
+15:12:09.771 [pub-1-1] INFO com.example.FluxFeaturesTests - Consumed: WHITE
+15:12:09.777 [sub-1-1] INFO reactor.core.publisher.FluxLog -  request(2)
+15:12:09.777 [sub-1-1] INFO reactor.core.publisher.FluxLog -  onNext(blue)
+15:12:09.777 [sub-1-1] INFO reactor.core.publisher.FluxLog -  onComplete()
+15:12:09.783 [pub-1-1] INFO com.example.FluxFeaturesTests - Consumed: BLUE&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Notice that the consumer callbacks (logging "Consumed: &amp;#8230;&amp;#8203;") are on the publisher thread &lt;code&gt;pub-1-1&lt;/code&gt;. If you take out the &lt;code&gt;subscribeOn()&lt;/code&gt; call, you might see all of the 2nd chunk of data processed on the &lt;code&gt;pub-1-1&lt;/code&gt; thread as well. This, again, is Reactor being frugal with threads&amp;#8201;&amp;#8212;&amp;#8201;if there&amp;#8217;s no explicit request to switch threads it stays on the same one for the next call, whatever that is.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="admonitionblock note"&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class="icon"&gt;
+&lt;div class="title"&gt;Note&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class="content"&gt;
+We changed the code in this sample from &lt;code&gt;useCapacity(2)&lt;/code&gt; to adding a &lt;code&gt;prefetch=2&lt;/code&gt; to the &lt;code&gt;publishOn()&lt;/code&gt;. The configurers are only hints, and sometimes they conflict with each other, and Reactor has to choose one over the other. This is a case where the &lt;code&gt;useCapacity()&lt;/code&gt; hint would have been ignored.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect2"&gt;
+&lt;h3 id="extractors-the-subscribers-from-the-dark-side"&gt;&lt;a class="anchor" href="#extractors-the-subscribers-from-the-dark-side"&gt;&lt;/a&gt;Extractors: The Subscribers from the Dark Side&lt;/h3&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;There is another way to subscribe to a sequence, which is to call &lt;code&gt;Mono.block()&lt;/code&gt; or &lt;code&gt;Mono.toFuture()&lt;/code&gt; or &lt;code&gt;Flux.toStream()&lt;/code&gt; (these are the "extractor" methods&amp;#8201;&amp;#8212;&amp;#8201;they get you out of the Reactive types into a less flexible, blocking abstraction). &lt;code&gt;Flux&lt;/code&gt; also has converters &lt;code&gt;collectList()&lt;/code&gt; and &lt;code&gt;collectMap()&lt;/code&gt; that convert from &lt;code&gt;Flux&lt;/code&gt; to &lt;code&gt;Mono&lt;/code&gt;. They don&amp;#8217;t actually subscribe to the sequence, but they do throw away any control you might have had over the suscription at the level of the individual items.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="admonitionblock warning"&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class="icon"&gt;
+&lt;div class="title"&gt;Warning&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class="content"&gt;
+A good rule of thumb is "&lt;strong&gt;never call an extractor&lt;/strong&gt;". There are some exceptions (otherwise the methods would not exist). One notable exception is in tests because it&amp;#8217;s useful to be able to block to allow results to accumulate.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;These methods are there as an escape hatch to bridge from Reactive to blocking; if you need to adapt to a legacy API, for instance Spring MVC. When you call &lt;code&gt;Mono.block()&lt;/code&gt; you throw away all the benefits of the Reactive Streams. This is the key difference between Reactive Streams and Java 8 &lt;code&gt;Streams&lt;/code&gt;&amp;#8201;&amp;#8212;&amp;#8201;the native Java &lt;code&gt;Stream&lt;/code&gt; only has the "all or nothing" subscription model, the equivalent of &lt;code&gt;Mono.block()&lt;/code&gt;. Of course &lt;code&gt;subscribe()&lt;/code&gt; can block the calling thread as well, so it&amp;#8217;s just as dangerous as the converter methods, but you have more control&amp;#8201;&amp;#8212;&amp;#8201;you can prevent it from blocking by using &lt;code&gt;subscribeOn()&lt;/code&gt; and you can drip the items through by applying back pressure and periodically deciding whether to continue.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="conclusion"&gt;&lt;a class="anchor" href="#conclusion"&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;In this article we have covered the basics of the Reactive Streams and Reactor APIs. If you need to know more there are plenty of places to look, but there&amp;#8217;s no substitute for hands on coding, so use the code in &lt;a href="https://github.com/dsyer/reactive-notes"&gt;GitHub&lt;/a&gt; (for this article in tests in the project called "flux"), or head over to the &lt;a href="https://github.com/reactor/lite-rx-api-hands-on"&gt;Lite RX Hands On&lt;/a&gt; workshop. So far, really this is just overhead, and we haven&amp;#8217;t learned much that we couldn&amp;#8217;t have done in a more obvious way using non-Reactive tools. The next article in the series will dig a little deeper into the blocking, dispatching and asynchronous sides of the Reactive model, and show you what opportunities there are to reap the real benefits.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Framework 4.3 goes GA</title>
+    <link rel="alternate" href="https://spring.io/blog/2016/06/10/spring-framework-4-3-goes-ga" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Juergen Hoeller</name>
+    </author>
+    <id>tag:spring.io,2016-06-09:2523</id>
+    <updated>2016-06-10T09:41:23Z</updated>
+    <content type="html">&lt;p&gt;Dear Spring community,&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m pleased to announce that Spring Framework 4.3 GA (a.k.a. 4.3.0.RELEASE) is now available from &lt;a href="https://repo.spring.io"&gt;repo.spring.io&lt;/a&gt; as well as Maven Central!&lt;/p&gt;
+&lt;p&gt;In addition to the feature themes mentioned in my &lt;a href="https://spring.io/blog/2016/04/06/spring-framework-4-3-goes-rc1"&gt;4.3 RC1 announcement&lt;/a&gt;, the GA release covers compatibility with several recent third-party releases, in particular: Hibernate ORM 5.2, Jackson 2.8, Netty 4.1, Undertow 1.4, and Tomcat 8.5.2 / 9.0 M6. Also, please note that our Hibernate 3.x support is finally deprecated (even &lt;a href="http://in.relation.to/2015/10/27/great-jira-cleanup-2015/"&gt;Hibernate 4.x is not actively supported by Red Hat anymore&lt;/a&gt;) and that Spring 4.3&amp;rsquo;s Jackson support requires Jackson 2.6+ now.&lt;/p&gt;
+&lt;p&gt;Spring Framework 4.3 is designed as a straightforward upgrade for all 4.x users. We will keep supporting the 4.2.x line until the end of this year; however, we recommend an upgrade to 4.3 at your earliest convenience. As previously hinted at, &lt;em&gt;the 4.3.x line will enjoy an extended support life until 2019&lt;/em&gt;, within the general Spring Framework 4 system requirements (JDK 6+, Servlet 2.5+) but with a focus on recent servers such as Tomcat 8 and WebSphere 8.&lt;/p&gt;
+&lt;p&gt;Next up: Spring Framework 5.0, with a first milestone to arrive towards the end of July, just in time for our &lt;a href="https://springoneplatform.io/"&gt;SpringOne Platform&lt;/a&gt; conference in Las Vegas!&lt;/p&gt;
+&lt;p&gt;Cheers,&lt;br/&gt;Juergen&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Cloud Stream 1.0.2.RELEASE is available</title>
+    <link rel="alternate" href="https://spring.io/blog/2016/06/08/spring-cloud-stream-1-0-2-release-is-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Marius Bogoevici</name>
+    </author>
+    <id>tag:spring.io,2016-06-08:2522</id>
+    <updated>2016-06-08T22:10:42Z</updated>
+    <content type="html">&lt;p&gt;Shortly after the &lt;a href="https://spring.io/blog/2016/06/03/spring-cloud-stream-1-0-1-release-is-available"&gt;1.0.1.RELEASE announcement&lt;/a&gt; last week we’ve identified a critical and very specific &lt;a href="https://github.com/spring-cloud/spring-cloud-stream/issues/564"&gt;issue&lt;/a&gt; concerning multi-binder configurations in cloud environments. As a result, we have decided to follow up with a 1.0.2.RELEASE to handle that and ensure that the fix is available in the upcoming Brixton.SR1 release. The artifacts can be found in &lt;a href="https://repo.spring.io"&gt;Spring Repository&lt;/a&gt; as well as &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cspring-cloud-stream"&gt;Maven Central&lt;/a&gt;.&lt;/p&gt;
+&lt;hr/&gt;
+&lt;p&gt;I will be talking about Spring Cloud Stream at &lt;a href="http://springoneplatform.io"&gt;Spring One Platform&lt;/a&gt;, which will be taking place in Las Vegas between August 1-4 this year. There are many other great talks so &lt;a href="https://2016.event.springoneplatform.io/schedule/sessions"&gt;check the agenda&lt;/a&gt; and &lt;a href="https://2016.event.springoneplatform.io/register"&gt;get your ticket&lt;/a&gt; if you haven’t done so already. &lt;/p&gt;</content>
   </entry>
 </feed>
