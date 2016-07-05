@@ -9,3 +9,14 @@
 0:0:0:0:0:0:0:1 - - [04/Jul/2016:00:01:45 -0300] "GET /courseManagement/admin/newUser?confirmation HTTP/1.1" 200 3410
 0:0:0:0:0:0:0:1 - - [04/Jul/2016:00:01:45 -0300] "GET /courseManagement/static/css/app.css HTTP/1.1" 200 1730
 0:0:0:0:0:0:0:1 - - [04/Jul/2016:00:01:45 -0300] "GET /courseManagement/static/css/bootstrap.css HTTP/1.1" 200 141414
+::1 - - [04/Jul/2016:00:08:10 -0300] "GET //SpringSecurityBcrypt/login HTTP/1.1" 404 1048
+::1 - - [04/Jul/2016:00:08:10 -0300] "GET //apple-touch-icon-precomposed.png HTTP/1.1" 404 1060
+::1 - - [04/Jul/2016:00:08:10 -0300] "GET //favicon.ico HTTP/1.1" 404 1018
+::1 - - [04/Jul/2016:00:08:10 -0300] "GET //apple-touch-icon.png HTTP/1.1" 404 1036
+::1 - - [04/Jul/2016:00:08:10 -0300] "GET //SpringSecurityBcrypt/login HTTP/1.1" 404 1048
+::1 - - [04/Jul/2016:00:08:10 -0300] "GET //apple-touch-icon-precomposed.png HTTP/1.1" 404 1060
+::1 - - [04/Jul/2016:00:08:10 -0300] "GET //apple-touch-icon.png HTTP/1.1" 404 1036
+127.0.0.1 - - [04/Jul/2016:00:08:10 -0300] "GET //apple-touch-icon-precomposed.png HTTP/1.1" 404 1060
+127.0.0.1 - - [04/Jul/2016:00:08:10 -0300] "GET //apple-touch-icon.png HTTP/1.1" 404 1036
+127.0.0.1 - - [04/Jul/2016:00:08:11 -0300] "GET //apple-touch-icon-precomposed.png HTTP/1.1" 404 1060
+127.0.0.1 - - [04/Jul/2016:00:08:11 -0300] "GET //apple-touch-icon.png HTTP/1.1" 404 1036

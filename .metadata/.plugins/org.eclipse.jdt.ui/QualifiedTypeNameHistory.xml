@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+<fullyQualifiedTypeName name="com.course.dao.UserDao"/>
+<fullyQualifiedTypeName name="com.course.model.UserProfile"/>
+<fullyQualifiedTypeName name="com.course.service.UserService"/>
+<fullyQualifiedTypeName name="com.course.service.UserProfileService"/>
+</qualifiedTypeNameHistroy>
