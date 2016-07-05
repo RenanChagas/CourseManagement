@@ -59,6 +59,7 @@ INDEX VERSION 1.129+/Users/renanchagas/Documents/Workspace-java/CourseManagement
 2706489921.index
 2363563081.index
 2867016645.index
+<<<<<<< HEAD
 404199878.index
 1969767409.index
 1972168640.index
@@ -74,6 +75,13 @@ INDEX VERSION 1.129+/Users/renanchagas/Documents/Workspace-java/CourseManagement
 3514523102.index
 1669964250.index
 2042972344.index
+=======
+1816050946.index
+822454049.index
+2096271730.index
+521061135.index
+3828672394.index
+>>>>>>> parent of 3c14e54... 1.0.2
 958151817.index
 705616889.index
 1600484619.index

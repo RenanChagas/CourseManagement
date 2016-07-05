@@ -5643,6 +5643,7 @@ org.eclipse.recommenders.utils.Logs$LogTraceException
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-03 23:06:49.116
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+<<<<<<< HEAD
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-03 23:50:00.249
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
@@ -5919,3 +5920,5 @@ java.lang.IllegalStateException: Provisioning system has not been initialized
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getPlanner(UpdateChecker.java:175)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:135)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:73)
+=======
+>>>>>>> parent of 3c14e54... 1.0.2

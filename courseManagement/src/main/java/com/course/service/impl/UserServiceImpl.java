@@ -30,8 +30,8 @@ public class UserServiceImpl implements UserService{
 	}
 
 	@Override
-	public User findByUsername(String username) {
-		return dao.findByUsername(username);
+	public User findBySsoId(String sso) {
+		return dao.findBySsoId(sso);
 	}
 
 	

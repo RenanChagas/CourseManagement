@@ -8,6 +8,6 @@ public interface UserService{
 	
 	public User findById(int id);
 	
-	public User findByUsername(String username);
+	public User findBySsoId(String sso);
 	
 }

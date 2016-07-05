@@ -13,7 +13,7 @@
         
         <intercept-url pattern="/dba**" access="hasRole('ADMIN') and hasRole('MANAGER')" />
         <form-login  login-page="/login" 
-        			 username-parameter="username" 
+        			 username-parameter="ssoId" 
         			 password-parameter="password" 
         			 authentication-failure-url="/login?error" 
         			 default-target-url="/home" />
