@@ -1,5 +1,6 @@
 INDEX VERSION 1.129+/Users/renanchagas/Documents/Workspace-java/CourseManagement/.metadata/.plugins/org.eclipse.jdt.core
 <<<<<<< HEAD
+<<<<<<< HEAD
 2918057877.index
 4036230714.index
 2504508920.index
@@ -94,6 +95,18 @@ INDEX VERSION 1.129+/Users/renanchagas/Documents/Workspace-java/CourseManagement
 1411619130.index
 4038993826.index
 396676748.index
+=======
+1346536151.index
+1677255567.index
+1753319412.index
+506999199.index
+3767115374.index
+1917679625.index
+1972168640.index
+1411619130.index
+4038993826.index
+396676748.index
+>>>>>>> parent of f73bc2d... 1.0.3
 2993431089.index
 1969767409.index
 2821306843.index
@@ -165,4 +178,7 @@ INDEX VERSION 1.129+/Users/renanchagas/Documents/Workspace-java/CourseManagement
 4117357.index
 899235113.index
 2363563081.index
+<<<<<<< HEAD
+>>>>>>> parent of f73bc2d... 1.0.3
+=======
 >>>>>>> parent of f73bc2d... 1.0.3
