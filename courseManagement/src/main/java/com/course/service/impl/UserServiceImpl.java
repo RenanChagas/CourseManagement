@@ -29,7 +29,6 @@ public class UserServiceImpl implements UserService{
 		return dao.findById(id);
 	}
 
-	@Override
 	public User findByUsername(String username) {
 		return dao.findByUsername(username);
 	}

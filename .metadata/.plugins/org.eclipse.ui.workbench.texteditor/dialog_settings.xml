@@ -8,6 +8,7 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="sso"/>
 			<item value="jre"/>
 		</list>
 		<list key="replacehistory">
