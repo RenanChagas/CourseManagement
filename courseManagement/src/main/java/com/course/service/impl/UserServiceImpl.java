@@ -33,6 +33,19 @@ public class UserServiceImpl implements UserService{
 		return dao.findByUsername(username);
 	}
 
+	public void update(User user) {
+		User userUpdate = dao.findById(user.getId());
+		
+		userUpdate.setUsername(user.getUsername());
+		userUpdate.setFirstName(user.getFirstName());
+		userUpdate.setLastName(user.getLastName());
+		userUpdate.setEmail(user.getEmail());
+		userUpdate.setJobDesc(user.getJobDesc());
+		
+		dao.save(userUpdate);
+		
+	}
+
 	
 
 }

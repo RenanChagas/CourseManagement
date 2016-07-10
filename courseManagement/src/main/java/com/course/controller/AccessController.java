@@ -9,6 +9,7 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -63,8 +64,10 @@ public class AccessController {
 	
 	@RequestMapping(value = "/admin/newUser", method = RequestMethod.GET)
 	public String newUser(ModelMap model) {
+		
 		User user = new User();
 		model.addAttribute("user", user);
+		
 		return "newuser";
 	}
 	
@@ -81,5 +84,36 @@ public class AccessController {
 		return "redirect:/admin/newUser?confirmation";
 	}
 	
+	@RequestMapping(value = "/profile", method = RequestMethod.GET)
+	public String profile(ModelMap model) {
+		
+		String username = getPrincipal();
+		model.addAttribute("user", userService.findByUsername(username));
+		
+		return "profile";
+	}
+	
+	@RequestMapping(value = "/profile", method = RequestMethod.POST)
+	public String editProfile(User user, BindingResult result, ModelMap model) {
+		
+		if (result.hasErrors()) {
+			System.out.println("There are errors");
+			return "welcome";
+		}
+		userService.update(user);
+		
+		return "welcome";
+	}
+	
+	private String getPrincipal(){
+		String userName = null;
+		Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		if (principal instanceof UserDetails) {
+			userName = ((UserDetails)principal).getUsername();
+		} else {
+			userName = principal.toString();
+		}
+		return userName;
+	}
 	
 }
