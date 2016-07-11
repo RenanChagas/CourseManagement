@@ -10621,3 +10621,507 @@ java.net.UnknownHostException: www.codetrails.com: unknown error
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 04:22:19.226
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2016-07-10 14:30:35.980 -----------------------------------------------
+eclipse.buildId=3.7.3.201602251025-RELEASE-e46
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=pt_BR
+Framework arguments:  -product org.springsource.sts.ide -keyring /Users/renanchagas/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springsource.sts.ide -keyring /Users/renanchagas/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2016-07-10 14:31:26.268
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-07-10 14:31:45.533
+!MESSAGE Error changing index details workspace://
+!STACK 0
+java.io.FileNotFoundException: /Users/renanchagas/Documents/Workspace-java/CourseManagement/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_5_1.del (No such file or directory)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.apache.lucene.store.FSDirectory$FSIndexInput$Descriptor.<init>(FSDirectory.java:552)
+	at org.apache.lucene.store.FSDirectory$FSIndexInput.<init>(FSDirectory.java:582)
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:488)
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:482)
+	at org.apache.lucene.util.BitVector.<init>(BitVector.java:199)
+	at org.apache.lucene.index.SegmentReader.loadDeletedDocs(SegmentReader.java:402)
+	at org.apache.lucene.index.SegmentReader.initialize(SegmentReader.java:368)
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:306)
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:236)
+	at org.apache.lucene.index.DocumentsWriter.applyDeletes(DocumentsWriter.java:915)
+	at org.apache.lucene.index.IndexWriter.applyDeletes(IndexWriter.java:4339)
+	at org.apache.lucene.index.IndexWriter.doFlush(IndexWriter.java:3579)
+	at org.apache.lucene.index.IndexWriter.flush(IndexWriter.java:3450)
+	at org.apache.lucene.index.IndexWriter.closeInternal(IndexWriter.java:1638)
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1602)
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1578)
+	at org.apache.maven.index.context.NexusIndexWriter.close(NexusIndexWriter.java:58)
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareCleanIndex(DefaultIndexingContext.java:235)
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareIndex(DefaultIndexingContext.java:205)
+	at org.apache.maven.index.context.DefaultIndexingContext.<init>(DefaultIndexingContext.java:173)
+	at org.apache.maven.index.DefaultNexusIndexer.addIndexingContextForced(DefaultNexusIndexer.java:160)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.createIndexingContext(NexusIndexManager.java:965)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.setIndexDetails(NexusIndexManager.java:932)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.repositoryAdded(NexusIndexManager.java:878)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.addRepository(RepositoryRegistry.java:163)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:236)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-07-10 14:31:45.543
+!MESSAGE Could not add repository index
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not add repository index
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.setIndexDetails(NexusIndexManager.java:945)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.repositoryAdded(NexusIndexManager.java:878)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.addRepository(RepositoryRegistry.java:163)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:236)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: /Users/renanchagas/Documents/Workspace-java/CourseManagement/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_5_1.del (No such file or directory)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.apache.lucene.store.FSDirectory$FSIndexInput$Descriptor.<init>(FSDirectory.java:552)
+	at org.apache.lucene.store.FSDirectory$FSIndexInput.<init>(FSDirectory.java:582)
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:488)
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:482)
+	at org.apache.lucene.util.BitVector.<init>(BitVector.java:199)
+	at org.apache.lucene.index.SegmentReader.loadDeletedDocs(SegmentReader.java:402)
+	at org.apache.lucene.index.SegmentReader.initialize(SegmentReader.java:368)
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:306)
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:236)
+	at org.apache.lucene.index.DocumentsWriter.applyDeletes(DocumentsWriter.java:915)
+	at org.apache.lucene.index.IndexWriter.applyDeletes(IndexWriter.java:4339)
+	at org.apache.lucene.index.IndexWriter.doFlush(IndexWriter.java:3579)
+	at org.apache.lucene.index.IndexWriter.flush(IndexWriter.java:3450)
+	at org.apache.lucene.index.IndexWriter.closeInternal(IndexWriter.java:1638)
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1602)
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1578)
+	at org.apache.maven.index.context.NexusIndexWriter.close(NexusIndexWriter.java:58)
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareCleanIndex(DefaultIndexingContext.java:235)
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareIndex(DefaultIndexingContext.java:205)
+	at org.apache.maven.index.context.DefaultIndexingContext.<init>(DefaultIndexingContext.java:173)
+	at org.apache.maven.index.DefaultNexusIndexer.addIndexingContextForced(DefaultNexusIndexer.java:160)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.createIndexingContext(NexusIndexManager.java:965)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.setIndexDetails(NexusIndexManager.java:932)
+	... 5 more
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2016-07-10 14:31:45.544
+!MESSAGE Could not add repository index
+!STACK 0
+java.io.FileNotFoundException: /Users/renanchagas/Documents/Workspace-java/CourseManagement/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_5_1.del (No such file or directory)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.apache.lucene.store.FSDirectory$FSIndexInput$Descriptor.<init>(FSDirectory.java:552)
+	at org.apache.lucene.store.FSDirectory$FSIndexInput.<init>(FSDirectory.java:582)
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:488)
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:482)
+	at org.apache.lucene.util.BitVector.<init>(BitVector.java:199)
+	at org.apache.lucene.index.SegmentReader.loadDeletedDocs(SegmentReader.java:402)
+	at org.apache.lucene.index.SegmentReader.initialize(SegmentReader.java:368)
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:306)
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:236)
+	at org.apache.lucene.index.DocumentsWriter.applyDeletes(DocumentsWriter.java:915)
+	at org.apache.lucene.index.IndexWriter.applyDeletes(IndexWriter.java:4339)
+	at org.apache.lucene.index.IndexWriter.doFlush(IndexWriter.java:3579)
+	at org.apache.lucene.index.IndexWriter.flush(IndexWriter.java:3450)
+	at org.apache.lucene.index.IndexWriter.closeInternal(IndexWriter.java:1638)
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1602)
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1578)
+	at org.apache.maven.index.context.NexusIndexWriter.close(NexusIndexWriter.java:58)
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareCleanIndex(DefaultIndexingContext.java:235)
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareIndex(DefaultIndexingContext.java:205)
+	at org.apache.maven.index.context.DefaultIndexingContext.<init>(DefaultIndexingContext.java:173)
+	at org.apache.maven.index.DefaultNexusIndexer.addIndexingContextForced(DefaultNexusIndexer.java:160)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.createIndexingContext(NexusIndexManager.java:965)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.setIndexDetails(NexusIndexManager.java:932)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.repositoryAdded(NexusIndexManager.java:878)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.addRepository(RepositoryRegistry.java:163)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:236)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-07-10 14:31:45.674
+!MESSAGE Error changing index details file:/Users/renanchagas/.m2/repository/
+!STACK 0
+java.io.FileNotFoundException: /Users/renanchagas/Documents/Workspace-java/CourseManagement/.metadata/.plugins/org.eclipse.m2e.core/nexus/d7b616a7284c002d288b1765c5f38a8f/_u_1.del (No such file or directory)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.apache.lucene.store.FSDirectory$FSIndexInput$Descriptor.<init>(FSDirectory.java:552)
+	at org.apache.lucene.store.FSDirectory$FSIndexInput.<init>(FSDirectory.java:582)
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:488)
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:482)
+	at org.apache.lucene.util.BitVector.<init>(BitVector.java:199)
+	at org.apache.lucene.index.SegmentReader.loadDeletedDocs(SegmentReader.java:402)
+	at org.apache.lucene.index.SegmentReader.initialize(SegmentReader.java:368)
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:306)
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:236)
+	at org.apache.lucene.index.DocumentsWriter.applyDeletes(DocumentsWriter.java:915)
+	at org.apache.lucene.index.IndexWriter.applyDeletes(IndexWriter.java:4339)
+	at org.apache.lucene.index.IndexWriter.doFlush(IndexWriter.java:3579)
+	at org.apache.lucene.index.IndexWriter.flush(IndexWriter.java:3450)
+	at org.apache.lucene.index.IndexWriter.closeInternal(IndexWriter.java:1638)
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1602)
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1578)
+	at org.apache.maven.index.context.NexusIndexWriter.close(NexusIndexWriter.java:58)
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareCleanIndex(DefaultIndexingContext.java:235)
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareIndex(DefaultIndexingContext.java:205)
+	at org.apache.maven.index.context.DefaultIndexingContext.<init>(DefaultIndexingContext.java:173)
+	at org.apache.maven.index.DefaultNexusIndexer.addIndexingContextForced(DefaultNexusIndexer.java:160)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.createIndexingContext(NexusIndexManager.java:965)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.setIndexDetails(NexusIndexManager.java:932)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.repositoryAdded(NexusIndexManager.java:878)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.addRepository(RepositoryRegistry.java:163)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:241)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-07-10 14:31:45.676
+!MESSAGE Could not add repository index
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not add repository index
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.setIndexDetails(NexusIndexManager.java:945)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.repositoryAdded(NexusIndexManager.java:878)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.addRepository(RepositoryRegistry.java:163)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:241)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: /Users/renanchagas/Documents/Workspace-java/CourseManagement/.metadata/.plugins/org.eclipse.m2e.core/nexus/d7b616a7284c002d288b1765c5f38a8f/_u_1.del (No such file or directory)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.apache.lucene.store.FSDirectory$FSIndexInput$Descriptor.<init>(FSDirectory.java:552)
+	at org.apache.lucene.store.FSDirectory$FSIndexInput.<init>(FSDirectory.java:582)
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:488)
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:482)
+	at org.apache.lucene.util.BitVector.<init>(BitVector.java:199)
+	at org.apache.lucene.index.SegmentReader.loadDeletedDocs(SegmentReader.java:402)
+	at org.apache.lucene.index.SegmentReader.initialize(SegmentReader.java:368)
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:306)
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:236)
+	at org.apache.lucene.index.DocumentsWriter.applyDeletes(DocumentsWriter.java:915)
+	at org.apache.lucene.index.IndexWriter.applyDeletes(IndexWriter.java:4339)
+	at org.apache.lucene.index.IndexWriter.doFlush(IndexWriter.java:3579)
+	at org.apache.lucene.index.IndexWriter.flush(IndexWriter.java:3450)
+	at org.apache.lucene.index.IndexWriter.closeInternal(IndexWriter.java:1638)
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1602)
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1578)
+	at org.apache.maven.index.context.NexusIndexWriter.close(NexusIndexWriter.java:58)
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareCleanIndex(DefaultIndexingContext.java:235)
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareIndex(DefaultIndexingContext.java:205)
+	at org.apache.maven.index.context.DefaultIndexingContext.<init>(DefaultIndexingContext.java:173)
+	at org.apache.maven.index.DefaultNexusIndexer.addIndexingContextForced(DefaultNexusIndexer.java:160)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.createIndexingContext(NexusIndexManager.java:965)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.setIndexDetails(NexusIndexManager.java:932)
+	... 5 more
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2016-07-10 14:31:45.676
+!MESSAGE Could not add repository index
+!STACK 0
+java.io.FileNotFoundException: /Users/renanchagas/Documents/Workspace-java/CourseManagement/.metadata/.plugins/org.eclipse.m2e.core/nexus/d7b616a7284c002d288b1765c5f38a8f/_u_1.del (No such file or directory)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.apache.lucene.store.FSDirectory$FSIndexInput$Descriptor.<init>(FSDirectory.java:552)
+	at org.apache.lucene.store.FSDirectory$FSIndexInput.<init>(FSDirectory.java:582)
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:488)
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:482)
+	at org.apache.lucene.util.BitVector.<init>(BitVector.java:199)
+	at org.apache.lucene.index.SegmentReader.loadDeletedDocs(SegmentReader.java:402)
+	at org.apache.lucene.index.SegmentReader.initialize(SegmentReader.java:368)
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:306)
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:236)
+	at org.apache.lucene.index.DocumentsWriter.applyDeletes(DocumentsWriter.java:915)
+	at org.apache.lucene.index.IndexWriter.applyDeletes(IndexWriter.java:4339)
+	at org.apache.lucene.index.IndexWriter.doFlush(IndexWriter.java:3579)
+	at org.apache.lucene.index.IndexWriter.flush(IndexWriter.java:3450)
+	at org.apache.lucene.index.IndexWriter.closeInternal(IndexWriter.java:1638)
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1602)
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1578)
+	at org.apache.maven.index.context.NexusIndexWriter.close(NexusIndexWriter.java:58)
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareCleanIndex(DefaultIndexingContext.java:235)
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareIndex(DefaultIndexingContext.java:205)
+	at org.apache.maven.index.context.DefaultIndexingContext.<init>(DefaultIndexingContext.java:173)
+	at org.apache.maven.index.DefaultNexusIndexer.addIndexingContextForced(DefaultNexusIndexer.java:160)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.createIndexingContext(NexusIndexManager.java:965)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.setIndexDetails(NexusIndexManager.java:932)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.repositoryAdded(NexusIndexManager.java:878)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.addRepository(RepositoryRegistry.java:163)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:241)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-07-10 14:31:45.857
+!MESSAGE Error changing index details central|https://repo.maven.apache.org/maven2
+!STACK 0
+java.io.FileNotFoundException: /Users/renanchagas/Documents/Workspace-java/CourseManagement/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_1_1.del (No such file or directory)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.apache.lucene.store.FSDirectory$FSIndexInput$Descriptor.<init>(FSDirectory.java:552)
+	at org.apache.lucene.store.FSDirectory$FSIndexInput.<init>(FSDirectory.java:582)
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:488)
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:482)
+	at org.apache.lucene.util.BitVector.<init>(BitVector.java:199)
+	at org.apache.lucene.index.SegmentReader.loadDeletedDocs(SegmentReader.java:402)
+	at org.apache.lucene.index.SegmentReader.initialize(SegmentReader.java:368)
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:306)
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:236)
+	at org.apache.lucene.index.DocumentsWriter.applyDeletes(DocumentsWriter.java:915)
+	at org.apache.lucene.index.IndexWriter.applyDeletes(IndexWriter.java:4339)
+	at org.apache.lucene.index.IndexWriter.doFlush(IndexWriter.java:3579)
+	at org.apache.lucene.index.IndexWriter.flush(IndexWriter.java:3450)
+	at org.apache.lucene.index.IndexWriter.closeInternal(IndexWriter.java:1638)
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1602)
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1578)
+	at org.apache.maven.index.context.NexusIndexWriter.close(NexusIndexWriter.java:58)
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareCleanIndex(DefaultIndexingContext.java:235)
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareIndex(DefaultIndexingContext.java:205)
+	at org.apache.maven.index.context.DefaultIndexingContext.<init>(DefaultIndexingContext.java:173)
+	at org.apache.maven.index.DefaultNexusIndexer.addIndexingContextForced(DefaultNexusIndexer.java:160)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.createIndexingContext(NexusIndexManager.java:965)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.setIndexDetails(NexusIndexManager.java:932)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.repositoryAdded(NexusIndexManager.java:878)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.addRepository(RepositoryRegistry.java:163)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:263)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-07-10 14:31:45.859
+!MESSAGE Could not add repository index
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not add repository index
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.setIndexDetails(NexusIndexManager.java:945)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.repositoryAdded(NexusIndexManager.java:878)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.addRepository(RepositoryRegistry.java:163)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:263)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: /Users/renanchagas/Documents/Workspace-java/CourseManagement/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_1_1.del (No such file or directory)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.apache.lucene.store.FSDirectory$FSIndexInput$Descriptor.<init>(FSDirectory.java:552)
+	at org.apache.lucene.store.FSDirectory$FSIndexInput.<init>(FSDirectory.java:582)
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:488)
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:482)
+	at org.apache.lucene.util.BitVector.<init>(BitVector.java:199)
+	at org.apache.lucene.index.SegmentReader.loadDeletedDocs(SegmentReader.java:402)
+	at org.apache.lucene.index.SegmentReader.initialize(SegmentReader.java:368)
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:306)
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:236)
+	at org.apache.lucene.index.DocumentsWriter.applyDeletes(DocumentsWriter.java:915)
+	at org.apache.lucene.index.IndexWriter.applyDeletes(IndexWriter.java:4339)
+	at org.apache.lucene.index.IndexWriter.doFlush(IndexWriter.java:3579)
+	at org.apache.lucene.index.IndexWriter.flush(IndexWriter.java:3450)
+	at org.apache.lucene.index.IndexWriter.closeInternal(IndexWriter.java:1638)
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1602)
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1578)
+	at org.apache.maven.index.context.NexusIndexWriter.close(NexusIndexWriter.java:58)
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareCleanIndex(DefaultIndexingContext.java:235)
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareIndex(DefaultIndexingContext.java:205)
+	at org.apache.maven.index.context.DefaultIndexingContext.<init>(DefaultIndexingContext.java:173)
+	at org.apache.maven.index.DefaultNexusIndexer.addIndexingContextForced(DefaultNexusIndexer.java:160)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.createIndexingContext(NexusIndexManager.java:965)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.setIndexDetails(NexusIndexManager.java:932)
+	... 5 more
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2016-07-10 14:31:45.859
+!MESSAGE Could not add repository index
+!STACK 0
+java.io.FileNotFoundException: /Users/renanchagas/Documents/Workspace-java/CourseManagement/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_1_1.del (No such file or directory)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.apache.lucene.store.FSDirectory$FSIndexInput$Descriptor.<init>(FSDirectory.java:552)
+	at org.apache.lucene.store.FSDirectory$FSIndexInput.<init>(FSDirectory.java:582)
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:488)
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:482)
+	at org.apache.lucene.util.BitVector.<init>(BitVector.java:199)
+	at org.apache.lucene.index.SegmentReader.loadDeletedDocs(SegmentReader.java:402)
+	at org.apache.lucene.index.SegmentReader.initialize(SegmentReader.java:368)
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:306)
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:236)
+	at org.apache.lucene.index.DocumentsWriter.applyDeletes(DocumentsWriter.java:915)
+	at org.apache.lucene.index.IndexWriter.applyDeletes(IndexWriter.java:4339)
+	at org.apache.lucene.index.IndexWriter.doFlush(IndexWriter.java:3579)
+	at org.apache.lucene.index.IndexWriter.flush(IndexWriter.java:3450)
+	at org.apache.lucene.index.IndexWriter.closeInternal(IndexWriter.java:1638)
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1602)
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1578)
+	at org.apache.maven.index.context.NexusIndexWriter.close(NexusIndexWriter.java:58)
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareCleanIndex(DefaultIndexingContext.java:235)
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareIndex(DefaultIndexingContext.java:205)
+	at org.apache.maven.index.context.DefaultIndexingContext.<init>(DefaultIndexingContext.java:173)
+	at org.apache.maven.index.DefaultNexusIndexer.addIndexingContextForced(DefaultNexusIndexer.java:160)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.createIndexingContext(NexusIndexManager.java:965)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.setIndexDetails(NexusIndexManager.java:932)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.repositoryAdded(NexusIndexManager.java:878)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.addRepository(RepositoryRegistry.java:163)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:263)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2016-07-10 14:32:32.845
+!MESSAGE Project facet grails.app has not been defined. It is used in plugin com.vmware.vfabric.ide.eclipse.tcserver.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2016-07-10 14:32:32.847
+!MESSAGE Project facet grails.app has not been defined. It is used in plugin org.eclipse.cft.server.branding.core.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 14:32:38.029
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 14:32:38.046
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 14:32:55.105
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 14:32:55.113
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 14:33:53.994
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 14:33:54.000
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 14:34:35.623
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 14:34:35.634
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2016-07-10 14:35:58.163
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2016-07-10 14:35:58.163
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-07-10 14:35:58.163
+!MESSAGE No repository found containing: osgi.bundle,org.sonatype.m2e.buildhelper,0.15.0.201405280027
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-07-10 14:35:58.163
+!MESSAGE No repository found containing: osgi.bundle,org.sonatype.m2e.egit,0.14.0.201509090157
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-07-10 14:35:58.163
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.sonatype.m2e.buildhelper.feature,0.15.0.201405280027
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-07-10 14:35:58.163
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.sonatype.m2e.egit.feature,0.14.0.201509090157
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2016-07-10 14:35:58.165
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2016-07-10 14:35:58.165
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-07-10 14:35:58.165
+!MESSAGE No repository found containing: osgi.bundle,org.sonatype.m2e.buildhelper,0.15.0.201405280027
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-07-10 14:35:58.165
+!MESSAGE No repository found containing: osgi.bundle,org.sonatype.m2e.egit,0.14.0.201509090157
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-07-10 14:35:58.165
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.sonatype.m2e.buildhelper.feature,0.15.0.201405280027
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-07-10 14:35:58.165
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.sonatype.m2e.egit.feature,0.14.0.201509090157
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 14:37:38.599
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 14:37:38.608
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 14:38:09.411
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 14:38:09.415
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 14:38:19.903
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 14:38:19.906
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 15:04:34.831
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 15:04:34.841
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 15:04:42.542
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 15:04:42.545
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 15:11:16.949
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 15:11:16.960
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 15:11:54.681
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 15:11:54.685
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 15:12:04.303
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 15:12:04.314
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 15:27:11.628
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 15:27:11.643
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 19:54:20.161
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 19:54:20.166
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 19:55:53.829
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 19:55:53.839
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 19:56:34.682
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 19:56:34.696
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 19:57:21.538
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 19:57:21.548
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 19:59:20.330
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 19:59:20.334
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 20:00:20.343
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 20:00:20.346
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 20:00:38.876
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 20:00:38.880
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 20:01:10.144
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 20:01:10.149
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 20:02:53.653
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-10 20:02:53.655
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!

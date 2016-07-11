@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="form" key="selection"/>
+		<item value="mdc-border-white-blue" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="MDC-border-white-blue"/>
 			<item value="form"/>
-			<item value="newUser"/>
-			<item value=" getPrincipal"/>
-			<item value="loadUserByUsername"/>
-			<item value="initializeProfiles"/>
-			<item value="roles"/>
-			<item value="UserDetails"/>
-			<item value="getPrinci"/>
+			<item value="mdc c"/>
+			<item value="mdc-border-white-blue"/>
+			<item value="done"/>
+			<item value="float-btn"/>
+			<item value="mdc-car"/>
+			<item value="body"/>
 		</list>
 		<list key="replacehistory">
 		</list>

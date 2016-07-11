@@ -4042,3 +4042,298 @@ Caused by: java.io.FileNotFoundException: /Users/renanchagas/Documents/Workspace
 2016-07-10 04:22:19,224 [Worker-184] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2016-07-10 04:22:19,225 [Worker-184] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2016-07-10 04:22:19,226 [Worker-184] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 14:31:45,518 [Worker-0] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Error changing index details workspace://
+java.io.FileNotFoundException: /Users/renanchagas/Documents/Workspace-java/CourseManagement/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_5_1.del (No such file or directory)
+	at java.io.RandomAccessFile.open0(Native Method) ~[na:1.8.0_91]
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316) ~[na:1.8.0_91]
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243) ~[na:1.8.0_91]
+	at org.apache.lucene.store.FSDirectory$FSIndexInput$Descriptor.<init>(FSDirectory.java:552) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.store.FSDirectory$FSIndexInput.<init>(FSDirectory.java:582) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:488) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:482) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.util.BitVector.<init>(BitVector.java:199) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.loadDeletedDocs(SegmentReader.java:402) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.initialize(SegmentReader.java:368) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:306) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:236) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.DocumentsWriter.applyDeletes(DocumentsWriter.java:915) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.applyDeletes(IndexWriter.java:4339) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.doFlush(IndexWriter.java:3579) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.flush(IndexWriter.java:3450) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.closeInternal(IndexWriter.java:1638) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1602) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1578) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.maven.index.context.NexusIndexWriter.close(NexusIndexWriter.java:58) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareCleanIndex(DefaultIndexingContext.java:235) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareIndex(DefaultIndexingContext.java:205) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.<init>(DefaultIndexingContext.java:173) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.DefaultNexusIndexer.addIndexingContextForced(DefaultNexusIndexer.java:160) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160202-2118/:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.createIndexingContext(NexusIndexManager.java:965) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.setIndexDetails(NexusIndexManager.java:932) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.repositoryAdded(NexusIndexManager.java:878) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.addRepository(RepositoryRegistry.java:163) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:236) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160125-0953.jar:na]
+2016-07-10 14:31:45,542 [Worker-0] ERROR o.e.m.c.i.r.RepositoryRegistry - Could not add repository index
+org.eclipse.core.runtime.CoreException: Could not add repository index
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.setIndexDetails(NexusIndexManager.java:945) ~[org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.repositoryAdded(NexusIndexManager.java:878) ~[org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.addRepository(RepositoryRegistry.java:163) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:236) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160125-0953.jar:na]
+Caused by: java.io.FileNotFoundException: /Users/renanchagas/Documents/Workspace-java/CourseManagement/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_5_1.del (No such file or directory)
+	at java.io.RandomAccessFile.open0(Native Method) ~[na:1.8.0_91]
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316) ~[na:1.8.0_91]
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243) ~[na:1.8.0_91]
+	at org.apache.lucene.store.FSDirectory$FSIndexInput$Descriptor.<init>(FSDirectory.java:552) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.store.FSDirectory$FSIndexInput.<init>(FSDirectory.java:582) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:488) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:482) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.util.BitVector.<init>(BitVector.java:199) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.loadDeletedDocs(SegmentReader.java:402) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.initialize(SegmentReader.java:368) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:306) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:236) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.DocumentsWriter.applyDeletes(DocumentsWriter.java:915) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.applyDeletes(IndexWriter.java:4339) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.doFlush(IndexWriter.java:3579) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.flush(IndexWriter.java:3450) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.closeInternal(IndexWriter.java:1638) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1602) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1578) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.maven.index.context.NexusIndexWriter.close(NexusIndexWriter.java:58) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareCleanIndex(DefaultIndexingContext.java:235) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareIndex(DefaultIndexingContext.java:205) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.<init>(DefaultIndexingContext.java:173) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.DefaultNexusIndexer.addIndexingContextForced(DefaultNexusIndexer.java:160) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160202-2118/:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.createIndexingContext(NexusIndexManager.java:965) ~[org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.setIndexDetails(NexusIndexManager.java:932) ~[org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	... 5 common frames omitted
+2016-07-10 14:31:45,673 [Worker-0] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Error changing index details file:/Users/renanchagas/.m2/repository/
+java.io.FileNotFoundException: /Users/renanchagas/Documents/Workspace-java/CourseManagement/.metadata/.plugins/org.eclipse.m2e.core/nexus/d7b616a7284c002d288b1765c5f38a8f/_u_1.del (No such file or directory)
+	at java.io.RandomAccessFile.open0(Native Method) ~[na:1.8.0_91]
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316) ~[na:1.8.0_91]
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243) ~[na:1.8.0_91]
+	at org.apache.lucene.store.FSDirectory$FSIndexInput$Descriptor.<init>(FSDirectory.java:552) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.store.FSDirectory$FSIndexInput.<init>(FSDirectory.java:582) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:488) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:482) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.util.BitVector.<init>(BitVector.java:199) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.loadDeletedDocs(SegmentReader.java:402) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.initialize(SegmentReader.java:368) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:306) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:236) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.DocumentsWriter.applyDeletes(DocumentsWriter.java:915) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.applyDeletes(IndexWriter.java:4339) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.doFlush(IndexWriter.java:3579) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.flush(IndexWriter.java:3450) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.closeInternal(IndexWriter.java:1638) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1602) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1578) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.maven.index.context.NexusIndexWriter.close(NexusIndexWriter.java:58) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareCleanIndex(DefaultIndexingContext.java:235) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareIndex(DefaultIndexingContext.java:205) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.<init>(DefaultIndexingContext.java:173) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.DefaultNexusIndexer.addIndexingContextForced(DefaultNexusIndexer.java:160) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160202-2118/:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.createIndexingContext(NexusIndexManager.java:965) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.setIndexDetails(NexusIndexManager.java:932) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.repositoryAdded(NexusIndexManager.java:878) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.addRepository(RepositoryRegistry.java:163) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:241) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160125-0953.jar:na]
+2016-07-10 14:31:45,675 [Worker-0] ERROR o.e.m.c.i.r.RepositoryRegistry - Could not add repository index
+org.eclipse.core.runtime.CoreException: Could not add repository index
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.setIndexDetails(NexusIndexManager.java:945) ~[org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.repositoryAdded(NexusIndexManager.java:878) ~[org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.addRepository(RepositoryRegistry.java:163) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:241) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160125-0953.jar:na]
+Caused by: java.io.FileNotFoundException: /Users/renanchagas/Documents/Workspace-java/CourseManagement/.metadata/.plugins/org.eclipse.m2e.core/nexus/d7b616a7284c002d288b1765c5f38a8f/_u_1.del (No such file or directory)
+	at java.io.RandomAccessFile.open0(Native Method) ~[na:1.8.0_91]
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316) ~[na:1.8.0_91]
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243) ~[na:1.8.0_91]
+	at org.apache.lucene.store.FSDirectory$FSIndexInput$Descriptor.<init>(FSDirectory.java:552) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.store.FSDirectory$FSIndexInput.<init>(FSDirectory.java:582) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:488) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:482) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.util.BitVector.<init>(BitVector.java:199) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.loadDeletedDocs(SegmentReader.java:402) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.initialize(SegmentReader.java:368) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:306) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:236) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.DocumentsWriter.applyDeletes(DocumentsWriter.java:915) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.applyDeletes(IndexWriter.java:4339) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.doFlush(IndexWriter.java:3579) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.flush(IndexWriter.java:3450) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.closeInternal(IndexWriter.java:1638) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1602) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1578) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.maven.index.context.NexusIndexWriter.close(NexusIndexWriter.java:58) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareCleanIndex(DefaultIndexingContext.java:235) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareIndex(DefaultIndexingContext.java:205) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.<init>(DefaultIndexingContext.java:173) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.DefaultNexusIndexer.addIndexingContextForced(DefaultNexusIndexer.java:160) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160202-2118/:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.createIndexingContext(NexusIndexManager.java:965) ~[org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.setIndexDetails(NexusIndexManager.java:932) ~[org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	... 5 common frames omitted
+2016-07-10 14:31:45,857 [Worker-0] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Error changing index details central|https://repo.maven.apache.org/maven2
+java.io.FileNotFoundException: /Users/renanchagas/Documents/Workspace-java/CourseManagement/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_1_1.del (No such file or directory)
+	at java.io.RandomAccessFile.open0(Native Method) ~[na:1.8.0_91]
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316) ~[na:1.8.0_91]
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243) ~[na:1.8.0_91]
+	at org.apache.lucene.store.FSDirectory$FSIndexInput$Descriptor.<init>(FSDirectory.java:552) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.store.FSDirectory$FSIndexInput.<init>(FSDirectory.java:582) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:488) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:482) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.util.BitVector.<init>(BitVector.java:199) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.loadDeletedDocs(SegmentReader.java:402) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.initialize(SegmentReader.java:368) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:306) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:236) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.DocumentsWriter.applyDeletes(DocumentsWriter.java:915) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.applyDeletes(IndexWriter.java:4339) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.doFlush(IndexWriter.java:3579) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.flush(IndexWriter.java:3450) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.closeInternal(IndexWriter.java:1638) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1602) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1578) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.maven.index.context.NexusIndexWriter.close(NexusIndexWriter.java:58) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareCleanIndex(DefaultIndexingContext.java:235) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareIndex(DefaultIndexingContext.java:205) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.<init>(DefaultIndexingContext.java:173) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.DefaultNexusIndexer.addIndexingContextForced(DefaultNexusIndexer.java:160) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160202-2118/:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.createIndexingContext(NexusIndexManager.java:965) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.setIndexDetails(NexusIndexManager.java:932) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.repositoryAdded(NexusIndexManager.java:878) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.addRepository(RepositoryRegistry.java:163) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:263) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160125-0953.jar:na]
+2016-07-10 14:31:45,859 [Worker-0] ERROR o.e.m.c.i.r.RepositoryRegistry - Could not add repository index
+org.eclipse.core.runtime.CoreException: Could not add repository index
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.setIndexDetails(NexusIndexManager.java:945) ~[org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.repositoryAdded(NexusIndexManager.java:878) ~[org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.addRepository(RepositoryRegistry.java:163) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:263) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47) [org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160125-0953.jar:na]
+Caused by: java.io.FileNotFoundException: /Users/renanchagas/Documents/Workspace-java/CourseManagement/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_1_1.del (No such file or directory)
+	at java.io.RandomAccessFile.open0(Native Method) ~[na:1.8.0_91]
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316) ~[na:1.8.0_91]
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243) ~[na:1.8.0_91]
+	at org.apache.lucene.store.FSDirectory$FSIndexInput$Descriptor.<init>(FSDirectory.java:552) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.store.FSDirectory$FSIndexInput.<init>(FSDirectory.java:582) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:488) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:482) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.util.BitVector.<init>(BitVector.java:199) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.loadDeletedDocs(SegmentReader.java:402) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.initialize(SegmentReader.java:368) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:306) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:236) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.DocumentsWriter.applyDeletes(DocumentsWriter.java:915) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.applyDeletes(IndexWriter.java:4339) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.doFlush(IndexWriter.java:3579) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.flush(IndexWriter.java:3450) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.closeInternal(IndexWriter.java:1638) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1602) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1578) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.maven.index.context.NexusIndexWriter.close(NexusIndexWriter.java:58) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareCleanIndex(DefaultIndexingContext.java:235) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.prepareIndex(DefaultIndexingContext.java:205) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.<init>(DefaultIndexingContext.java:173) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.DefaultNexusIndexer.addIndexingContextForced(DefaultNexusIndexer.java:160) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160202-2118/:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.createIndexingContext(NexusIndexManager.java:965) ~[org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.setIndexDetails(NexusIndexManager.java:932) ~[org.eclipse.m2e.core_1.7.0.20160202-2119.jar:na]
+	... 5 common frames omitted
+2016-07-10 14:32:37,989 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 14:32:38,039 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-07-10 14:32:38,045 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 14:32:38,046 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 14:32:55,104 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 14:32:55,111 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 14:32:55,113 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 14:32:55,115 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 14:33:53,985 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 14:33:53,997 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 14:33:53,999 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 14:33:54,000 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 14:34:35,622 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 14:34:35,631 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 14:34:35,633 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 14:34:35,634 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 14:37:38,591 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 14:37:38,602 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 14:37:38,607 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 14:37:38,608 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 14:38:09,403 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 14:38:09,412 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 14:38:09,414 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 14:38:09,415 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 14:38:19,903 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 14:38:19,904 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 14:38:19,906 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 14:38:19,907 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 15:04:34,826 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 15:04:34,836 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 15:04:34,840 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 15:04:34,841 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 15:04:42,534 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 15:04:42,543 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 15:04:42,545 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 15:04:42,546 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 15:11:16,946 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 15:11:16,953 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 15:11:16,960 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 15:11:16,961 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 15:11:54,681 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 15:11:54,683 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 15:11:54,685 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 15:11:54,687 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 15:12:04,302 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 15:12:04,307 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 15:12:04,313 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 15:12:04,314 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 15:27:11,616 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 15:27:11,638 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 15:27:11,643 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 15:27:11,644 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 19:54:20,160 [Worker-74] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 19:54:20,164 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 19:54:20,166 [Worker-74] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 19:54:20,167 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 19:55:53,819 [Worker-81] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 19:55:53,837 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 19:55:53,839 [Worker-81] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 19:55:53,840 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 19:56:34,682 [Worker-78] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 19:56:34,689 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 19:56:34,696 [Worker-78] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 19:56:34,697 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 19:57:21,538 [Worker-81] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 19:57:21,546 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 19:57:21,548 [Worker-81] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 19:57:21,549 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 19:59:20,308 [Worker-81] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 19:59:20,331 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 19:59:20,333 [Worker-81] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 19:59:20,334 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 20:00:20,342 [Worker-81] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 20:00:20,344 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 20:00:20,346 [Worker-81] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 20:00:20,347 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 20:00:38,867 [Worker-80] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 20:00:38,877 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 20:00:38,879 [Worker-80] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 20:00:38,880 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 20:01:10,136 [Worker-78] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 20:01:10,148 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 20:01:10,149 [Worker-78] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 20:01:10,150 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 20:02:53,645 [Worker-74] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 20:02:53,653 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-10 20:02:53,655 [Worker-74] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-07-10 20:02:53,656 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

@@ -48,3 +48,9 @@ local.properties
 
 # Code Recommenders
 .recommenders/
+
+# History
+.metadata
+/plugins
+/org.eclipse.core.resources
+/*.history

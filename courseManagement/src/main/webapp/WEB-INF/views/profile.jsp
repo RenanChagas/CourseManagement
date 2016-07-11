@@ -28,6 +28,10 @@
 	    	$(document).ready(function(){
 				
 				$('#profile-user_type').material_select();
+				
+				$('#float-btn').click(function(){
+				    $('#profile-form').submit();
+				});
 			
 			});
 			
@@ -143,14 +147,16 @@
 											</div>
 										</div>
 										<!-- Menu COL - END -->
-										<div id="fake-btn" class="MDC-fake">
-											<a id="float-btn" class="btn-floating btn-large waves-effect waves-light
-																mdc-btn-circle mdc-background-blue-dark
-																mdc-border-blue-dark mdc-nav-FloatButton-position
-																right">
-												<i class="material-icons mdc-icon-medium">done</i>
-											</a>
-										</div>
+										
+											
+												<a id="float-btn" class="btn-floating btn-large waves-effect waves-light
+																	mdc-btn-circle mdc-background-blue-dark
+																	mdc-border-blue-dark mdc-nav-FloatButton-position
+																	right">
+													<i class="material-icons mdc-icon-medium">edit</i>
+												</a>
+											
+										
 										
 									</div>
 								</div>
@@ -236,42 +242,43 @@
 									
 									<div class="input-field col s12 m6 l6">
 										<form:input value="${user.firstName}" id="firstName" type="text" path="firstName" length="15"
-											class="MDC-border-white-blue"/>
+											class="mdc-border-grey-light3 MDC-form-border-size"/>
 										<label for="firstName">First Name</label>
 									</div>
 									
 									<div class="input-field col s12 m6 l6">
 										<form:input value="${user.lastName}" id="lastName" type="text" path="lastName" length="25"
-											class="MDC-border-white-blue"/>
+											class="mdc-border-grey-light3 MDC-form-border-size"/>
 										<label for="lastName">Last Name</label>
 									</div>
 									
 									<div class="input-field col s12 m6 l6">
 										<form:input value="${user.email}" id="email" type="email" path="email"
-											class="MDC-border-white-blue"/>
+											class="mdc-border-grey-light3 MDC-form-border-size"/>
 										<label for="email">Email</label>
 									</div>
 									
 									<div class="input-field col s12 m6 l6">
 										<form:input value="${user.username}" id="username" type="text" path="username" length="15"
-											class="MDC-border-white-blue"/>
+											class="mdc-border-grey-light3 MDC-form-border-size"/>
 										<label for="username">Username</label>
 									</div>
 									
 									<div class="input-field col s12 m6 l6">
 										<form:input value="${user.jobDesc}" id="jobDesc" type="text" path="jobDesc" length="15"
-											class="MDC-border-white-blue"/>
+											class="mdc-border-grey-light3 MDC-form-border-size"/>
 										<label for="jobDesc">Job Description</label>
 									</div>
 									
 									<input id="id" name="id" type="hidden" value="${user.id}"/>
 									
-									<input type="submit" value="update">
+									
+									
 									
 								</form:form>
 									
 									<div class="input-field col s12 m6 l6">
-										<input value="Generali" id="team" type="text" class="MDC-border-white-blue" length="15">
+										<input value="Generali" id="team" type="text" class="mdc-border-grey-light3 MDC-form-border-size" length="15">
 										<label for="team">Team</label>
 									</div>	
 									

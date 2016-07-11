@@ -338,7 +338,7 @@ i.MDC-title-icon-position{
   background-color: #fff;
   transition: box-shadow .25s;
 	border-radius: 3px;
-  border-color: #e4e4e4 !important;
+  border-color: #fff !important;
   border-style: solid !important;
   border-width: 1px !important;
   margin-bottom: 15px;
@@ -407,6 +407,10 @@ i.MDC-title-icon-position{
   max-width: 250px;
 }
 
+.MDC-form-border-size {
+	width: 80% !important;
+}
+
 /*-------------------------------------------------*/
 /***              MDC  PROFILE - END             ***/
 /*-------------------------------------------------*/
@@ -449,6 +453,10 @@ i.mdc-icon-medium {
 
 .MDC-color-grey-light2 {
 	color: #c2c1cf;
+}
+
+.MDC-color-grey-light3 {
+	color: #d8d8d8;
 }
 
 .mdc-color-blue{
@@ -740,6 +748,18 @@ box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.20) !important;
 
 .mdc-border-white-blue{
   border-bottom-color: #fff !important;
+}
+
+.mdc-border-grey-light3{
+  border-bottom-color: #d8d8d8 !important;
+}
+
+.mdc-border-grey-light3:focus{
+  border-bottom: 1px solid #2196F3 !important;
+}
+
+.mdc-border-grey-light3:focus + label{
+  color: #2196F3 !important;
 }
 
 .mdc-border-white-blue:focus{
@@ -3012,7 +3032,7 @@ html {
  */
 body {
   margin: 0;
-  background-color: #f1f1f1;
+  background-color: #ecf0f2;
 }
 
 /* HTML5 display definitions
