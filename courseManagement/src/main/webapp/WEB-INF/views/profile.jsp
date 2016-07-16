@@ -16,7 +16,7 @@
 		
 		<!--Import JS -->
 		<script src="<c:url value="/static/js/jquery-2.1.4.min.js" />"></script>
-    	<script src="<c:url value="/static/js/materialize.min.js" />"></script>
+    	<script src="<c:url value="/static/js/materialize.js" />"></script>
     	
     	<!-- Menu -->
     	<script src="<c:url value="/static/js/menu.js" />"></script>

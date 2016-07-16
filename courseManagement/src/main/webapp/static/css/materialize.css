@@ -440,7 +440,7 @@ i.mdc-icon-medium {
 }
 
 .MDC-color-grey-dark {
-	color: #292929;
+	color: #292929 !important;
 }
 
 .MDC-color-grey-dark2 {
@@ -7117,7 +7117,7 @@ select {
   cursor: pointer;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #9e9e9e;
+  border-bottom: 1px solid #d8d8d8;
   outline: none;
   height: 3rem;
   line-height: 3rem;
