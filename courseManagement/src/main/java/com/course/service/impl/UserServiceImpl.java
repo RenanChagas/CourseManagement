@@ -41,6 +41,7 @@ public class UserServiceImpl implements UserService{
 		userUpdate.setLastName(user.getLastName());
 		userUpdate.setEmail(user.getEmail());
 		userUpdate.setJobDesc(user.getJobDesc());
+		userUpdate.setUserProfiles(user.getUserProfiles());
 		
 		dao.save(userUpdate);
 		

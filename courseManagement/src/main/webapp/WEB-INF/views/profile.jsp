@@ -27,7 +27,7 @@
 					
 	    	$(document).ready(function(){
 				
-				$('#profile-user_type').material_select();
+				$('#userProfiles').material_select();
 				
 				$('#float-btn').click(function(){
 				    $('#profile-form').submit();
@@ -270,27 +270,21 @@
 										<label for="jobDesc">Job Description</label>
 									</div>
 									
+									<div id="profile-user_type_div" class="mdc-profile-option-size input-field col s12 m6 l6">
+										<form:select value="${user.userProfiles}" id="userProfiles" path="userProfiles"  itemValue="id" 
+										multiple="false" itemLabel="type" items="${roles}" />
+										<label for="userProfiles">User Type</label>
+									</div>
+									
 									<input id="id" name="id" type="hidden" value="${user.id}"/>
-									
-									
-									
 									
 								</form:form>
 									
 									<div class="input-field col s12 m6 l6">
 										<input value="Generali" id="team" type="text" class="mdc-border-grey-light3 MDC-form-border-size" length="15">
 										<label for="team">Team</label>
-									</div>	
-									
-									<div id="profile-user_type_div" class="mdc-profile-option-size input-field col s12 m6 l6">
-										<select id="profile-user_type">
-											<option value="1" disabled>User Type</option>
-											<option value="2" selected>User</option>
-											<option value="3">Manager</option>
-											<option value="4">Admin</option>
-										</select>
-										<label>User Type</label>
 									</div>
+									
 							</div>
 						</div>
 					</div>	

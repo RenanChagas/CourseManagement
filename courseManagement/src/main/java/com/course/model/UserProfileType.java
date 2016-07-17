@@ -1,9 +1,9 @@
 package com.course.model;
 
 public enum UserProfileType {
-	USER("USER"),
-	ADMIN("ADMIN"),
-	MANAGER("MANAGER");
+	USER("User"),
+	ADMIN("Admin"),
+	MANAGER("Manager");
 	
 	String userProfileType;
 	

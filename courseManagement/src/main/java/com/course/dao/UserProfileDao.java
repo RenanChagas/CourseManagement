@@ -13,6 +13,8 @@ public interface UserProfileDao extends JpaRepository<UserProfile, Long>{
 	
 	public List<UserProfile> findAll();
 	
+	public List<UserProfile> findAllByOrderByIdAsc();
+	
 	public UserProfile findById(int id);
 	
 	public UserProfile findByType(String type);

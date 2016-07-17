@@ -7,11 +7,12 @@
 
     <http auto-config="true" >
     	<access-denied-handler error-page="/accessDenied" />
-        <intercept-url pattern="/" access="hasRole('USER') or hasRole('ADMIN') or hasRole('DBA')" />
-        <intercept-url pattern="/home" access="hasRole('USER') or hasRole('ADMIN') or hasRole('MANAGER')" />
-        <intercept-url pattern="/admin/**" access="hasRole('ADMIN')" />
+        <intercept-url pattern="/" access="hasRole('User') or hasRole('Admin') or hasRole('Manager')" />
+        <intercept-url pattern="/home" access="hasRole('User') or hasRole('Admin') or hasRole('Manager')" />
+        <intercept-url pattern="/admin/**" access="hasRole('Admin')" />
+        <intercept-url pattern="/manager/**" access="hasRole('Admin') or hasRole('Manager')" />
         
-        <intercept-url pattern="/dba**" access="hasRole('ADMIN') and hasRole('MANAGER')" />
+        <intercept-url pattern="/dba**" access="hasRole('Admin') and hasRole('Manager')" />
         <form-login  login-page="/login" 
         			 username-parameter="username" 
         			 password-parameter="password" 

@@ -29,4 +29,8 @@ public class UserProfileServiceImpl implements UserProfileService{
 		return dao.findById(id);
 	}
 
+	public List<UserProfile> findAllByOrderByIdAsc() {
+		return dao.findAllByOrderByIdAsc();
+	}
+
 }
