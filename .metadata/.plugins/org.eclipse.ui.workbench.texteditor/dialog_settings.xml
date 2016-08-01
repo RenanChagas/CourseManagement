@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="select-wrapper input.select-dropdown" key="selection"/>
+		<item value="profile-form" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="select-wrapper input.select-dropdown"/>
-			<item value="#d8d8d8 !important"/>
-			<item value="MDC-color-grey-dark"/>
-			<item value="caret"/>
-			<item value="caure"/>
-			<item value="caur"/>
-			<item value="cau"/>
-			<item value="MDC-border-white-blue"/>
+			<item value="profile-form"/>
+			<item value="MDC-form-border-size"/>
+			<item value=".MDC-form-border-size"/>
+			<item value="mdc-profile-option-size"/>
+			<item value="profile-user_type"/>
+			<item value="jobdesc"/>
+			<item value="userProfiles"/>
+			<item value="edit"/>
 		</list>
 		<list key="replacehistory">
 		</list>

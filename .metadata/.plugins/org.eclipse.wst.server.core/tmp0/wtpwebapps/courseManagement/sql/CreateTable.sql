@@ -46,3 +46,18 @@ VALUES ('admin','$2a$10$4eqIF5s/ewJwHK1p8lqlFOEm2QIA0S8g6./Lok.pQxqcxaBZYChRm', 
 INSERT INTO APP_USER_USER_PROFILE (user_id, user_profile_id)
   SELECT user.id, profile.id FROM app_user user, user_profile profile
   where user.username='admin' and profile.type='ADMIN';
+  
+/* Create TEAM table */
+create table TEAM(
+   id BIGINT NOT NULL AUTO_INCREMENT,
+   team_name VARCHAR(30) NOT NULL,
+   team_desc VARCHAR(200) NOT NULL,
+   PRIMARY KEY (id),
+   UNIQUE (team_name)
+);
+
+/* Populate Teams */
+/* Populate one Admin User which will further create other users for the application using GUI */
+INSERT INTO TEAM(team_name, team_desc)
+VALUES ('Globo','Team responsible for handling all Globo System using Java/Oracle');
+ 
