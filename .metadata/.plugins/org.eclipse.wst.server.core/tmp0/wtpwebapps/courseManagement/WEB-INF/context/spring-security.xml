@@ -18,7 +18,8 @@
         			 password-parameter="password" 
         			 authentication-failure-url="/login?error" 
         			 default-target-url="/home" />
-        <csrf/>
+        
+        <csrf disabled="true"/>
     </http>
     
     <beans:bean id="bcryptEncoder"

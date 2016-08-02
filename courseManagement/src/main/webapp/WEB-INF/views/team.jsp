@@ -5,6 +5,9 @@
 <html>
 <head>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<meta name="_csrf" content="${_csrf.token}"/> 
+		<meta name="_csrf_header" content="${_csrf.headerName}"/>
+		
 		<title>Course Management</title>
 		
 		<!--Import Google Icon Font-->
@@ -29,7 +32,14 @@
 				$('.modal-trigger').leanModal();
 
 			});
-
+			
+			  //Function to remove a team
+			function removeTeam(id){
+				$.post("team/removeUserTeam", {'id' : id}, function(){
+					$("#team_"+id).hide();	
+				});
+			}
+			
 		</script>
     	
 </head>
@@ -83,7 +93,7 @@
 								<!-- Dropdown Structure -->
 								<ul id='account-dropdown' class='dropdown-content mdc-nav-account-dropdown-position 
 																mdc-dropdown-style'>
-									<li><a id="profile" class="modal-trigger" href="profile.html">Profile</a></li>
+									<li><a id="profile" class="modal-trigger" href="<c:url value="/profile" />">Profile</a></li>
 									<li><a href="#!">Report a Problem</a></li>
 									<li class="divider"></li>
 									<li><a href="<c:url value="/logout" />">Logout</a></li>
@@ -120,7 +130,7 @@
 												</i>
 											</a>
 											<li class="MDC-navbar-menu"><a href="courses.html">My Courses</a></li>
-											<li class="MDC-navbar-menu"><a class="active MDC-navbar-active" href="<c:url value="/team/" />">Manage Team</a></li>
+											<li class="MDC-navbar-menu"><a class="active MDC-navbar-active" href="<c:url value="/team" />">Manage Team</a></li>
 											<li class="MDC-navbar-menu"><a href="badges.html">Find Courses</a></li>
 											<li class="MDC-navbar-menu"><a href="badges.html">News</a></li>
 										</ul>
@@ -172,7 +182,8 @@
 										<!-- TEAM Modal - END -->
 
 										<!-- USER Modal - BEGIN -->
-										<div class="right MDC-team-cardModal-size mdc-modal-content-style mdc-card">
+										<div onclick="location.href='<c:url value="/manager/adduser" />';" style="cursor: pointer;" 
+										class="right MDC-team-cardModal-size mdc-modal-content-style mdc-card">
 
 											<!-- Team Icon -->
 											<div class="row">
@@ -249,11 +260,12 @@
 					
 					
 					<!-- Teams - Begin -->
-					<div class="col">
+					<div class="col" id="team_${team.id}">
 						<div class="MDC-team-card-size mdc-card">
-							<a id="edit-avatar" class="btn-floating btn waves-effect 
-													   mdc-background-black-light mdc-absolute
-													   mdc-team-floatbtn-position right">
+							<a href="#"  onClick="removeTeam(${team.id})" 
+								class="btn-floating btn waves-effect 
+								mdc-background-black-light mdc-absolute 
+								mdc-team-floatbtn-position right">
 								<i class="material-icons">clear</i>
 							</a>
 							<!-- Team Icon -->

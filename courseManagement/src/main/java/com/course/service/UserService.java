@@ -12,4 +12,8 @@ public interface UserService{
 	
 	public User findByUsername(String username);
 	
+	public void removeUserTeam(User user, int id);
+	
+	//public void deleteTeam();
+	
 }

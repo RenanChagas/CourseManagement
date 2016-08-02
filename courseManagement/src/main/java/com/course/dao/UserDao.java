@@ -12,5 +12,8 @@ public interface UserDao extends JpaRepository<User, Long> {
 	public User findByUsername(String username);
 	
 	public User findById(int id);
-
+	
+	//@Query("delete from APP_USER_TEAM where TEAM_ID = 2")
+	//public void deleteTeam();
+	
 }

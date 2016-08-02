@@ -45,6 +45,11 @@ VALUES ('sam','$2a$10$4eqIF5s/ewJwHK1p8lqlFOEm2QIA0S8g6./Lok.pQxqcxaBZYChRm', 'S
  
  
 /* Populate JOIN Table */
-INSERT INTO APP_USER_USER_PROFILE (user_id, user_profile_id)
+insert into app_user_user_profile(user_id, user_profile_id)
   SELECT user.id, profile.id FROM app_user user, user_profile profile
-  where user.sso_id='sam' and profile.type='ADMIN';
+  where user.username='admin' and profile.type='ADMIN';
+  
+  
+INSERT INTO APP_USER_TEAM (user_id, team_id)
+  SELECT user.id, team.id FROM app_user user, team team
+  where user.username='renanchagasw' and team.team_name='globo';

@@ -58,6 +58,13 @@ public class User {
              inverseJoinColumns = { @JoinColumn(name = "USER_PROFILE_ID") })
 	private Set<UserProfile> userProfiles = new HashSet<UserProfile>();
 
+	@ManyToMany(fetch = FetchType.EAGER)
+	@JoinTable(name = "APP_USER_TEAM", 
+             joinColumns = { @JoinColumn(name = "USER_ID") }, 
+             inverseJoinColumns = { @JoinColumn(name = "TEAM_ID") })
+	private Set<Team> teams = new HashSet<Team>();
+	
+	
 	public int getId() {
 		return id;
 	}
@@ -130,11 +137,19 @@ public class User {
 		this.userProfiles = userProfiles;
 	}
 
+	public Set<Team> getTeams() {
+		return teams;
+	}
+
+	public void setTeams(Set<Team> teams) {
+		this.teams = teams;
+	}
+
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", username=" + username + ", password=" + password
-				+ ", firstName=" + firstName + ", lastName=" + lastName
-				+ ", email=" + email + ", jobDesc=" + jobDesc + ", state=" + state + ", userProfiles=" + userProfiles +"]";
+				+ ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + 
+				", jobDesc=" + jobDesc + ", state=" + state + ", userProfiles=" + userProfiles +", teams =" + teams +"]";
 	}
 
 	

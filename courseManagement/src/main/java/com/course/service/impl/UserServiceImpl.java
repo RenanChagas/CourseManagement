@@ -44,9 +44,18 @@ public class UserServiceImpl implements UserService{
 		userUpdate.setUserProfiles(user.getUserProfiles());
 		
 		dao.save(userUpdate);
-		
 	}
 
+	public void removeUserTeam(User user, int teamId){
+		User userUpdate = dao.findById(user.getId());
+		
+		userUpdate.getTeams().remove(teamId);
+		userUpdate.setTeams(userUpdate.getTeams());
+		dao.save(userUpdate);
+	}
 	
+	//public void deleteTeam(){
+	//	dao.deleteTeam();
+	//}
 
 }

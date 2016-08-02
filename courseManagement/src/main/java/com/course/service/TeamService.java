@@ -11,4 +11,7 @@ public interface TeamService {
 	public Team findByTeamName(String teamName);
 	
 	public List<Team> findAllByOrderByIdAsc();
+	
+	public List<Team> findTeamByUser(int id);
+	
 }

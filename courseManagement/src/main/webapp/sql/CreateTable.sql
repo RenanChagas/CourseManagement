@@ -57,7 +57,15 @@ create table TEAM(
 );
 
 /* Populate Teams */
-/* Populate one Admin User which will further create other users for the application using GUI */
 INSERT INTO TEAM(team_name, team_desc)
 VALUES ('Globo','Team responsible for handling all Globo System using Java/Oracle');
+
+/* Relation nxn APP_USER X TEAM */
+CREATE TABLE APP_USER_TEAM (
+    user_id BIGINT NOT NULL,
+    team_id BIGINT NOT NULL,
+    PRIMARY KEY (user_id, team_id),
+    CONSTRAINT FK_APP_USER_TEAM FOREIGN KEY (user_id) REFERENCES APP_USER (id),
+    CONSTRAINT FK_TEAM_APP_USER FOREIGN KEY (team_id) REFERENCES TEAM (id)
+);
  
