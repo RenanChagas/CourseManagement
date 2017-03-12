@@ -16,6 +16,7 @@ import javax.validation.Valid;
 
 import com.course.model.Team;
 import com.course.model.User;
+import com.course.service.DepartmentService;
 import com.course.service.TeamService;
 import com.course.service.UserService;
 
@@ -28,6 +29,9 @@ public class TeamController {
 	
 	@Autowired
 	UserService userService;
+	
+	@Autowired
+	DepartmentService departmentService;
 	
 	@ModelAttribute("user")
 	public User getUserName() {

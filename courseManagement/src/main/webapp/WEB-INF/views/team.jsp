@@ -312,7 +312,7 @@
 											Department:
 										</font>
 										<font class="MDC-color-grey">
-											Consulting
+											${team.department}
 										</font>
 
 									</div>

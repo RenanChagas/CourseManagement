@@ -77,4 +77,9 @@ create table DEPARTMENT(
    PRIMARY KEY (id),
    UNIQUE (name)
 );
+
+ALTER TABLE TEAM
+    ADD department_id BIGINT,
+    ADD CONSTRAINT FOREIGN KEY(department_id) REFERENCES DEPARTMENT(id);
+    
  

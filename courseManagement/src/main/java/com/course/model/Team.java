@@ -1,10 +1,15 @@
 package com.course.model;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import org.hibernate.validator.constraints.NotEmpty;
@@ -24,6 +29,10 @@ public class Team {
 	@Column(name="TEAM_DESC", unique=true, nullable=false)
 	private String teamDesc;
 	
+	@ManyToOne(optional = false)
+    @JoinColumn(name="DEPARTMENT_ID")
+    private Department department;
+
 	public int getId() {
 		return id;
 	}
@@ -47,10 +56,18 @@ public class Team {
 	public void setTeamDesc(String teamDesc) {
 		this.teamDesc = teamDesc;
 	}
+	
+	public Department getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(Department department){
+		this.department = department;
+	}
 
 	@Override
 	public String toString() {
-		return "Team [id=" + id + ", teamName=" + teamName + ", TeamDesc=" + teamDesc +"]";
+		return "Team [id=" + id + ", teamName=" + teamName + ", TeamDesc=" + teamDesc +", Department=" + department + "]";
 	}
 
 }

@@ -24,6 +24,14 @@ public class Department {
 	@Column(name="DESC", unique=true, nullable=false)
 	private String desc;
 	
+	public Department(){
+		
+	}
+	
+	public Department(String name){
+		this.name = name;
+	}
+	
 	public int getId() {
 		return id;
 	}
@@ -50,7 +58,7 @@ public class Department {
 	
 	@Override
 	public String toString() {
-		return "DEPARTMENT [id=" + id + ", name=" + name + ", desc=" + desc +"]";
+		return name;
 	}
 
 }

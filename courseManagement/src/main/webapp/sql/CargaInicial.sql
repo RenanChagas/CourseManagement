@@ -155,8 +155,17 @@ VALUES
 /*!40000 ALTER TABLE `user_profile` ENABLE KEYS */;
 UNLOCK TABLES;
 
+/* Populate Department */
+INSERT INTO `department` (`id`, `name`, `desc`)
+VALUES
+	(1,'Consulting','Consulting department for external clients');
 
-
+/* Update Team */
+UPDATE TEAM
+SET DEPARTMENT_ID = 1
+WHERE ID = 2 OR ID = 3
+	
+	
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
