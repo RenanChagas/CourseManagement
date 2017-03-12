@@ -14,4 +14,6 @@ public interface TeamService {
 	
 	public List<Team> findTeamByUser(int id);
 	
+	public void save(Team team);
+	
 }

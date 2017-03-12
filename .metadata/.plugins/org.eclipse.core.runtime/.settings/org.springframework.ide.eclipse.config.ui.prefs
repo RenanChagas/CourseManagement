@@ -1,5 +1,5 @@
 //com.springsource.config.ui.prefs.activePageIndex\:/courseManagement/src/main/webapp/WEB-INF/context/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="8"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/courseManagement/src/main/webapp/WEB-INF/context/spring-database.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/courseManagement/src/main/webapp/WEB-INF/context/spring-security.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
-//com.springsource.config.ui.prefs.activePageIndex\:/courseManagement/src/main/webapp/WEB-INF/context/springmvc-dispatcher-servlet.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="6"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/courseManagement/src/main/webapp/WEB-INF/context/springmvc-dispatcher-servlet.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
 eclipse.preferences.version=1

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+    http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.0.xsd">
+
+    <http auto-config="true" >
+    	<access-denied-handler error-page="/accessDenied" />
+        <intercept-url pattern="/" access="hasRole('User') or hasRole('Admin') or hasRole('Manager')" />
+        <intercept-url pattern="/home" access="hasRole('User') or hasRole('Admin') or hasRole('Manager')" />
+        <intercept-url pattern="/admin/**" access="hasRole('Admin')" />
+        <intercept-url pattern="/manager/**" access="hasRole('Admin') or hasRole('Manager')" />
+        
+        <intercept-url pattern="/dba**" access="hasRole('Admin') and hasRole('Manager')" />
+        <form-login  login-page="/login" 
+        			 username-parameter="username" 
+        			 password-parameter="password" 
+        			 authentication-failure-url="/login?error" 
+        			 default-target-url="/home" />
+        
+        <csrf disabled="true"/>
+    </http>
+    
+    <beans:bean id="bcryptEncoder"
+		class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder" />
+
+	<authentication-manager>
+		<authentication-provider user-service-ref="customUserDetailsService">
+			<password-encoder ref="bcryptEncoder" />
+		</authentication-provider>
+	</authentication-manager>
+	
+</beans:beans>

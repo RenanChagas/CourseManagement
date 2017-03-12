@@ -43,5 +43,9 @@ public class TeamServiceImpl implements TeamService{
 		}
 		return teams;
 	}
+	
+	public void save(Team team){
+		dao.save(team);
+	}
 
 }

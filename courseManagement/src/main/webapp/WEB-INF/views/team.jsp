@@ -156,7 +156,8 @@
 									<div class="modal-content">
 
 										<!-- TEAM Modal - BEGIN -->
-										<div class="left MDC-team-cardModal-size mdc-modal-content-style mdc-card">
+										<div onclick="location.href='<c:url value="/team/addTeam" />';" style="cursor: pointer;" 
+										class="left MDC-team-cardModal-size mdc-modal-content-style mdc-card">
 											<!-- Team Icon -->
 											<div class="row">
 												<div class="center MDC-margin-top-20">
@@ -271,7 +272,7 @@
 							<!-- Team Icon -->
 							<div class="row">
 								<div class="center MDC-margin-top-20">
-									<img src="<c:url value="/static/images/temp/globo-team.png"/>"
+									<img src="<c:url value="/static/images/temp/team-${team.teamName}.png"/>" 
 										class="mdc-avatar-circle-large mdc-shadow-default"/>
 								</div>
 							</div>

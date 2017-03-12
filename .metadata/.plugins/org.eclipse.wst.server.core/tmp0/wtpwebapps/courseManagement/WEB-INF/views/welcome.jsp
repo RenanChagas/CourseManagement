@@ -119,8 +119,8 @@
 															menu
 														</i>
 													</a>
-													<li class="MDC-navbar-menu"><a href="courses.html">My Courses</a></li>
-													<li class="MDC-navbar-menu"><a class="active MDC-navbar-active" href="badges.html">Manage Team</a></li>
+													<li class="MDC-navbar-menu"><a class="active MDC-navbar-active" href="courses.html">My Courses</a></li>
+													<li class="MDC-navbar-menu"><a href="<c:url value="/team" />">Manage Team</a></li>
 													<li class="MDC-navbar-menu"><a href="badges.html">Find Courses</a></li>
 													<li class="MDC-navbar-menu"><a href="badges.html">News</a></li>
 												</ul>
